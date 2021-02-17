@@ -1,0 +1,473 @@
+Script started on 2021-02-17 16:24:20-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@remote00:~/tmp/lab0$ ls -[K~/,ssh[K[K[K[K.ssh
+known_hosts
+pparmar2@remote00:~/tmp/lab0$ ssh-keygen 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/pparmar2/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/pparmar2/.ssh/id_rsa
+Your public key has been saved in /home/pparmar2/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:l2x+KpYoqo9MwqtbiHibOkC7ua+RFBPj4etI/yFVV0I pparmar2@remote00
+The key's randomart image is:
++---[RSA 3072]----+
+| +      .E .     |
+|o +       o      |
+| =     . .       |
+| .+   . .. .     |
+|.+.  .  S =      |
+|Xoo .    +       |
+|B*=o . . .. .    |
+|=*oo+ o +  o     |
+|B@Oo o . ..      |
++----[SHA256]-----+
+pparmar2@remote00:~/tmp/lab0$ ls
+lab0.LOG
+pparmar2@remote00:~/tmp/lab0$ lsssh-keygen [2Pls ~/.ssh
+id_rsa	id_rsa.pub  known_hosts
+pparmar2@remote00:~/tmp/lab0$ ssh-copy-id pparmar2@remote
+/usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/pparmar2/.ssh/id_rsa.pub"
+The authenticity of host 'remote (128.226.114.197)' can't be established.
+ECDSA key fingerprint is SHA256:UEIh1TASIC96TC1hhxVbkVS0DrddNKHk7Q2nzgDCt+Y.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+/usr/bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed
+/usr/bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys
+pparmar2@remote's password: 
+
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'pparmar2@remote'"
+and check to make sure that only the key(s) you wanted were added.
+
+pparmar2@remote00:~/tmp/lab0$ ls
+lab0.LOG
+pparmar2@remote00:~/tmp/lab0$ mkdir -p ~/projects
+pparmar2@remote00:~/tmp/lab0$ cd ~/projects
+pparmar2@remote00:~/projects$ git clone ssh://user@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/~umrig[1Par/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/~umriga[1Pr/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/~umrigar[1P/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpr@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpr@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Car@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmr@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Car@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2r@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C@remote.cs.binghamton.edu/~[1Pumrigar/git-repos/cs471.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+Cloning into 'cs471'...
+remote: Enumerating objects: 404, done.[K
+remote: Counting objects:   0% (1/404)[Kremote: Counting objects:   1% (5/404)[Kremote: Counting objects:   2% (9/404)[Kremote: Counting objects:   3% (13/404)[Kremote: Counting objects:   4% (17/404)[Kremote: Counting objects:   5% (21/404)[Kremote: Counting objects:   6% (25/404)[Kremote: Counting objects:   7% (29/404)[Kremote: Counting objects:   8% (33/404)[Kremote: Counting objects:   9% (37/404)[Kremote: Counting objects:  10% (41/404)[Kremote: Counting objects:  11% (45/404)[Kremote: Counting objects:  12% (49/404)[Kremote: Counting objects:  13% (53/404)[Kremote: Counting objects:  14% (57/404)[Kremote: Counting objects:  15% (61/404)[Kremote: Counting objects:  16% (65/404)[Kremote: Counting objects:  17% (69/404)[Kremote: Counting objects:  18% (73/404)[Kremote: Counting objects:  19% (77/404)[Kremote: Counting objects:  20% (81/404)[Kremote: Counting objects:  21% (85/404)[Kremote: Counting objects:  22% (89/404)[Kremote: Counting objects:  23% (93/404)[Kremote: Counting objects:  24% (97/404)[Kremote: Counting objects:  25% (101/404)[Kremote: Counting objects:  26% (106/404)[Kremote: Counting objects:  27% (110/404)[Kremote: Counting objects:  28% (114/404)[Kremote: Counting objects:  29% (118/404)[Kremote: Counting objects:  30% (122/404)[Kremote: Counting objects:  31% (126/404)[Kremote: Counting objects:  32% (130/404)[Kremote: Counting objects:  33% (134/404)[Kremote: Counting objects:  34% (138/404)[Kremote: Counting objects:  35% (142/404)[Kremote: Counting objects:  36% (146/404)[Kremote: Counting objects:  37% (150/404)[Kremote: Counting objects:  38% (154/404)[Kremote: Counting objects:  39% (158/404)[Kremote: Counting objects:  40% (162/404)[Kremote: Counting objects:  41% (166/404)[Kremote: Counting objects:  42% (170/404)[Kremote: Counting objects:  43% (174/404)[Kremote: Counting objects:  44% (178/404)[Kremote: Counting objects:  45% (182/404)[Kremote: Counting objects:  46% (186/404)[Kremote: Counting objects:  47% (190/404)[Kremote: Counting objects:  48% (194/404)[Kremote: Counting objects:  49% (198/404)[Kremote: Counting objects:  50% (202/404)[Kremote: Counting objects:  51% (207/404)[Kremote: Counting objects:  52% (211/404)[Kremote: Counting objects:  53% (215/404)[Kremote: Counting objects:  54% (219/404)[Kremote: Counting objects:  55% (223/404)[Kremote: Counting objects:  56% (227/404)[Kremote: Counting objects:  57% (231/404)[Kremote: Counting objects:  58% (235/404)[Kremote: Counting objects:  59% (239/404)[Kremote: Counting objects:  60% (243/404)[Kremote: Counting objects:  61% (247/404)[Kremote: Counting objects:  62% (251/404)[Kremote: Counting objects:  63% (255/404)[Kremote: Counting objects:  64% (259/404)[Kremote: Counting objects:  65% (263/404)[Kremote: Counting objects:  66% (267/404)[Kremote: Counting objects:  67% (271/404)[Kremote: Counting objects:  68% (275/404)[Kremote: Counting objects:  69% (279/404)[Kremote: Counting objects:  70% (283/404)[Kremote: Counting objects:  71% (287/404)[Kremote: Counting objects:  72% (291/404)[Kremote: Counting objects:  73% (295/404)[Kremote: Counting objects:  74% (299/404)[Kremote: Counting objects:  75% (303/404)[Kremote: Counting objects:  76% (308/404)[Kremote: Counting objects:  77% (312/404)[Kremote: Counting objects:  78% (316/404)[Kremote: Counting objects:  79% (320/404)[Kremote: Counting objects:  80% (324/404)[Kremote: Counting objects:  81% (328/404)[Kremote: Counting objects:  82% (332/404)[Kremote: Counting objects:  83% (336/404)[Kremote: Counting objects:  84% (340/404)[Kremote: Counting objects:  85% (344/404)[Kremote: Counting objects:  86% (348/404)[Kremote: Counting objects:  87% (352/404)[Kremote: Counting objects:  88% (356/404)[Kremote: Counting objects:  89% (360/404)[Kremote: Counting objects:  90% (364/404)[Kremote: Counting objects:  91% (368/404)[Kremote: Counting objects:  92% (372/404)[Kremote: Counting objects:  93% (376/404)[Kremote: Counting objects:  94% (380/404)[Kremote: Counting objects:  95% (384/404)[Kremote: Counting objects:  96% (388/404)[Kremote: Counting objects:  97% (392/404)[Kremote: Counting objects:  98% (396/404)[Kremote: Counting objects:  99% (400/404)[Kremote: Counting objects: 100% (404/404)[Kremote: Counting objects: 100% (404/404), done.[K
+remote: Compressing objects:   0% (1/384)[Kremote: Compressing objects:   1% (4/384)[Kremote: Compressing objects:   2% (8/384)[Kremote: Compressing objects:   3% (12/384)[Kremote: Compressing objects:   4% (16/384)[Kremote: Compressing objects:   5% (20/384)[Kremote: Compressing objects:   6% (24/384)[Kremote: Compressing objects:   7% (27/384)[Kremote: Compressing objects:   8% (31/384)[Kremote: Compressing objects:   9% (35/384)[Kremote: Compressing objects:  10% (39/384)[Kremote: Compressing objects:  11% (43/384)[Kremote: Compressing objects:  12% (47/384)[Kremote: Compressing objects:  13% (50/384)[Kremote: Compressing objects:  14% (54/384)[Kremote: Compressing objects:  15% (58/384)[Kremote: Compressing objects:  16% (62/384)[Kremote: Compressing objects:  17% (66/384)[Kremote: Compressing objects:  18% (70/384)[Kremote: Compressing objects:  19% (73/384)[Kremote: Compressing objects:  20% (77/384)[Kremote: Compressing objects:  21% (81/384)[Kremote: Compressing objects:  22% (85/384)[Kremote: Compressing objects:  23% (89/384)[Kremote: Compressing objects:  24% (93/384)[Kremote: Compressing objects:  25% (96/384)[Kremote: Compressing objects:  26% (100/384)[Kremote: Compressing objects:  27% (104/384)[Kremote: Compressing objects:  28% (108/384)[Kremote: Compressing objects:  29% (112/384)[Kremote: Compressing objects:  30% (116/384)[Kremote: Compressing objects:  31% (120/384)[Kremote: Compressing objects:  32% (123/384)[Kremote: Compressing objects:  33% (127/384)[Kremote: Compressing objects:  34% (131/384)[Kremote: Compressing objects:  35% (135/384)[Kremote: Compressing objects:  36% (139/384)[Kremote: Compressing objects:  37% (143/384)[Kremote: Compressing objects:  38% (146/384)[Kremote: Compressing objects:  39% (150/384)[Kremote: Compressing objects:  40% (154/384)[Kremote: Compressing objects:  41% (158/384)[Kremote: Compressing objects:  42% (162/384)[Kremote: Compressing objects:  43% (166/384)[Kremote: Compressing objects:  44% (169/384)[Kremote: Compressing objects:  45% (173/384)[Kremote: Compressing objects:  46% (177/384)[Kremote: Compressing objects:  47% (181/384)[Kremote: Compressing objects:  48% (185/384)[Kremote: Compressing objects:  49% (189/384)[Kremote: Compressing objects:  50% (192/384)[Kremote: Compressing objects:  51% (196/384)[Kremote: Compressing objects:  52% (200/384)[Kremote: Compressing objects:  53% (204/384)[Kremote: Compressing objects:  54% (208/384)[Kremote: Compressing objects:  55% (212/384)[Kremote: Compressing objects:  56% (216/384)[Kremote: Compressing objects:  57% (219/384)[Kremote: Compressing objects:  58% (223/384)[Kremote: Compressing objects:  59% (227/384)[Kremote: Compressing objects:  60% (231/384)[Kremote: Compressing objects:  61% (235/384)[Kremote: Compressing objects:  62% (239/384)[Kremote: Compressing objects:  63% (242/384)[Kremote: Compressing objects:  64% (246/384)[Kremote: Compressing objects:  65% (250/384)[Kremote: Compressing objects:  66% (254/384)[Kremote: Compressing objects:  67% (258/384)[Kremote: Compressing objects:  68% (262/384)[Kremote: Compressing objects:  69% (265/384)[Kremote: Compressing objects:  70% (269/384)[Kremote: Compressing objects:  71% (273/384)[Kremote: Compressing objects:  72% (277/384)[Kremote: Compressing objects:  73% (281/384)[Kremote: Compressing objects:  74% (285/384)[Kremote: Compressing objects:  75% (288/384)[Kremote: Compressing objects:  76% (292/384)[Kremote: Compressing objects:  77% (296/384)[Kremote: Compressing objects:  78% (300/384)[Kremote: Compressing objects:  79% (304/384)[Kremote: Compressing objects:  80% (308/384)[Kremote: Compressing objects:  81% (312/384)[Kremote: Compressing objects:  82% (315/384)[Kremote: Compressing objects:  83% (319/384)[Kremote: Compressing objects:  84% (323/384)[Kremote: Compressing objects:  85% (327/384)[Kremote: Compressing objects:  86% (331/384)[Kremote: Compressing objects:  87% (335/384)[Kremote: Compressing objects:  88% (338/384)[Kremote: Compressing objects:  89% (342/384)[Kremote: Compressing objects:  90% (346/384)[Kremote: Compressing objects:  91% (350/384)[Kremote: Compressing objects:  92% (354/384)[Kremote: Compressing objects:  93% (358/384)[Kremote: Compressing objects:  94% (361/384)[Kremote: Compressing objects:  95% (365/384)[Kremote: Compressing objects:  96% (369/384)[Kremote: Compressing objects:  97% (373/384)[Kremote: Compressing objects:  98% (377/384)[Kremote: Compressing objects:  99% (381/384)[Kremote: Compressing objects: 100% (384/384)[Kremote: Compressing objects: 100% (384/384), done.[K
+Receiving objects:   0% (1/404)Receiving objects:   1% (5/404)Receiving objects:   2% (9/404)Receiving objects:   3% (13/404)Receiving objects:   4% (17/404)Receiving objects:   5% (21/404)Receiving objects:   6% (25/404)Receiving objects:   7% (29/404)Receiving objects:   8% (33/404)Receiving objects:   9% (37/404)Receiving objects:  10% (41/404)Receiving objects:  11% (45/404)Receiving objects:  12% (49/404)Receiving objects:  13% (53/404)Receiving objects:  14% (57/404)Receiving objects:  15% (61/404)Receiving objects:  16% (65/404)Receiving objects:  17% (69/404)Receiving objects:  18% (73/404)Receiving objects:  19% (77/404)Receiving objects:  20% (81/404)Receiving objects:  21% (85/404)Receiving objects:  22% (89/404)Receiving objects:  23% (93/404)Receiving objects:  24% (97/404)Receiving objects:  25% (101/404)Receiving objects:  26% (106/404)Receiving objects:  27% (110/404)Receiving objects:  28% (114/404)Receiving objects:  29% (118/404)Receiving objects:  30% (122/404)Receiving objects:  31% (126/404)Receiving objects:  32% (130/404)Receiving objects:  33% (134/404)Receiving objects:  34% (138/404)Receiving objects:  35% (142/404)Receiving objects:  36% (146/404)Receiving objects:  37% (150/404)Receiving objects:  38% (154/404)Receiving objects:  39% (158/404)Receiving objects:  40% (162/404)Receiving objects:  41% (166/404)Receiving objects:  42% (170/404)Receiving objects:  43% (174/404)Receiving objects:  44% (178/404)Receiving objects:  45% (182/404)Receiving objects:  46% (186/404)Receiving objects:  47% (190/404)Receiving objects:  48% (194/404)Receiving objects:  49% (198/404)Receiving objects:  50% (202/404)Receiving objects:  51% (207/404)Receiving objects:  52% (211/404)Receiving objects:  53% (215/404)Receiving objects:  54% (219/404)Receiving objects:  55% (223/404)Receiving objects:  56% (227/404)Receiving objects:  57% (231/404)Receiving objects:  58% (235/404)Receiving objects:  59% (239/404)Receiving objects:  60% (243/404)Receiving objects:  61% (247/404)Receiving objects:  62% (251/404)Receiving objects:  63% (255/404)Receiving objects:  64% (259/404)Receiving objects:  65% (263/404)Receiving objects:  66% (267/404)Receiving objects:  67% (271/404)Receiving objects:  68% (275/404)Receiving objects:  69% (279/404)Receiving objects:  70% (283/404)Receiving objects:  71% (287/404)Receiving objects:  72% (291/404)Receiving objects:  73% (295/404)Receiving objects:  74% (299/404)Receiving objects:  75% (303/404)Receiving objects:  76% (308/404)Receiving objects:  77% (312/404)Receiving objects:  78% (316/404)Receiving objects:  79% (320/404)Receiving objects:  80% (324/404)Receiving objects:  81% (328/404)Receiving objects:  82% (332/404)Receiving objects:  83% (336/404)Receiving objects:  84% (340/404)Receiving objects:  85% (344/404)Receiving objects:  86% (348/404)Receiving objects:  87% (352/404)Receiving objects:  88% (356/404)Receiving objects:  89% (360/404)Receiving objects:  90% (364/404)Receiving objects:  91% (368/404)Receiving objects:  92% (372/404)Receiving objects:  93% (376/404)Receiving objects:  94% (380/404)remote: Total 404 (delta 171), reused 0 (delta 0), pack-reused 0
+Receiving objects:  95% (384/404)Receiving objects:  96% (388/404)Receiving objects:  97% (392/404)Receiving objects:  98% (396/404)Receiving objects:  99% (400/404)Receiving objects: 100% (404/404)Receiving objects: 100% (404/404), 1.55 MiB | 7.04 MiB/s, done.
+Resolving deltas:   0% (0/171)Resolving deltas:   1% (2/171)Resolving deltas:   2% (4/171)Resolving deltas:   3% (6/171)Resolving deltas:   4% (7/171)Resolving deltas:   5% (9/171)Resolving deltas:   6% (11/171)Resolving deltas:   7% (12/171)Resolving deltas:   8% (14/171)Resolving deltas:   9% (16/171)Resolving deltas:  10% (18/171)Resolving deltas:  11% (19/171)Resolving deltas:  12% (21/171)Resolving deltas:  13% (23/171)Resolving deltas:  14% (24/171)Resolving deltas:  15% (26/171)Resolving deltas:  16% (28/171)Resolving deltas:  17% (30/171)Resolving deltas:  18% (31/171)Resolving deltas:  19% (33/171)Resolving deltas:  20% (35/171)Resolving deltas:  21% (36/171)Resolving deltas:  22% (38/171)Resolving deltas:  23% (40/171)Resolving deltas:  24% (42/171)Resolving deltas:  25% (43/171)Resolving deltas:  26% (45/171)Resolving deltas:  27% (47/171)Resolving deltas:  28% (48/171)Resolving deltas:  29% (50/171)Resolving deltas:  30% (52/171)Resolving deltas:  31% (54/171)Resolving deltas:  32% (55/171)Resolving deltas:  33% (57/171)Resolving deltas:  34% (59/171)Resolving deltas:  35% (60/171)Resolving deltas:  36% (62/171)Resolving deltas:  37% (64/171)Resolving deltas:  38% (65/171)Resolving deltas:  39% (67/171)Resolving deltas:  40% (69/171)Resolving deltas:  41% (71/171)Resolving deltas:  42% (72/171)Resolving deltas:  43% (74/171)Resolving deltas:  44% (76/171)Resolving deltas:  45% (77/171)Resolving deltas:  46% (79/171)Resolving deltas:  47% (81/171)Resolving deltas:  48% (83/171)Resolving deltas:  49% (84/171)Resolving deltas:  50% (86/171)Resolving deltas:  51% (88/171)Resolving deltas:  52% (89/171)Resolving deltas:  53% (91/171)Resolving deltas:  54% (93/171)Resolving deltas:  55% (95/171)Resolving deltas:  56% (96/171)Resolving deltas:  57% (98/171)Resolving deltas:  58% (100/171)Resolving deltas:  59% (101/171)Resolving deltas:  60% (103/171)Resolving deltas:  61% (105/171)Resolving deltas:  62% (107/171)Resolving deltas:  63% (108/171)Resolving deltas:  64% (110/171)Resolving deltas:  65% (112/171)Resolving deltas:  66% (113/171)Resolving deltas:  67% (115/171)Resolving deltas:  68% (117/171)Resolving deltas:  69% (118/171)Resolving deltas:  70% (120/171)Resolving deltas:  71% (122/171)Resolving deltas:  72% (124/171)Resolving deltas:  73% (125/171)Resolving deltas:  74% (127/171)Resolving deltas:  75% (129/171)Resolving deltas:  76% (130/171)Resolving deltas:  77% (132/171)Resolving deltas:  78% (134/171)Resolving deltas:  79% (136/171)Resolving deltas:  80% (137/171)Resolving deltas:  81% (139/171)Resolving deltas:  82% (141/171)Resolving deltas:  83% (143/171)Resolving deltas:  84% (144/171)Resolving deltas:  85% (146/171)Resolving deltas:  86% (148/171)Resolving deltas:  87% (149/171)Resolving deltas:  88% (151/171)Resolving deltas:  89% (153/171)Resolving deltas:  90% (154/171)Resolving deltas:  91% (156/171)Resolving deltas:  92% (158/171)Resolving deltas:  93% (160/171)Resolving deltas:  94% (161/171)Resolving deltas:  95% (163/171)Resolving deltas:  96% (165/171)Resolving deltas:  97% (166/171)Resolving deltas:  98% (168/171)Resolving deltas:  99% (170/171)Resolving deltas: 100% (171/171)Resolving deltas: 100% (171/171), done.
+pparmar2@remote00:~/projects$ cd ~
+pparmar2@remote00:~$ ls
+Arduino  Desktop    Downloads  i220b  media  Pictures  Public	  tmp
+cs220	 Documents  git-repos  i220X  Music  projects  Templates  Videos
+pparmar2@remote00:~$ ln -s projects/cs471 .
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd po[Krojects/
+pparmar2@remote00:~/projects$ ls
+cs471
+pparmar2@remote00:~/projects$ cd cs471/
+pparmar2@remote00:~/projects/cs471$ ls
+announce.html  bin	  hws	      labs	README.md
+announce.umt   docs	  index.html  misc	slides
+assets	       exercises  index.umt   projects	umt.make
+pparmar2@remote00:~/projects/cs471$ cd ~
+pparmar2@remote00:~$ cd ~[2Plscd cs471/ls[Kcd projects/ls[Kn -s projects/cs471 .s[Kcd ~git clone ssh://pparmar2@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[Ccd ~/projects[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit clone ssh://pparmar2@remote.cs.binghamton.edu/~umrigar/git-repos/cs471.git[A[C[Ccd ~[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2Plsn -s projects/cs471 .s[Kcd projects/ls[Kcd cs471/ls[Kcd ~[K ~/projects/cs471/
+pparmar2@remote00:~/projects/cs471$ ls
+announce.html  bin	  hws	      labs	README.md
+announce.umt   docs	  index.html  misc	slides
+assets	       exercises  index.umt   projects	umt.make
+pparmar2@remote00:~/projects/cs471$ git pull
+warning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+Already up to date.
+pparmar2@remote00:~/projects/cs471$ git log -5
+[?1h=[33mcommit 033feef3528f034d73cc60f5c49f49186b8b2dbd[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31m[m [33m[m[33m[m[1;36m[m[1;32m[m[33m[m[1;31m[m[33m[m[1;31morigin/HEAD[m[33m)[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Feb 17 15:30:29 2021 -0500[m
+[m
+    added class doodles[m
+[m
+[33mcommit df8cb76c127aab62962eaf5e76f4e62659e82f76[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Wed Feb 17 12:38:39 2021 -0500[m
+[m
+    syntax slides update[m
+[m
+[33mcommit d1cc625136e94513c3b28b86ad8cc48fc986a285[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Feb 15 20:56:13 2021 -0500[m
+[m
+    added lab0[m
+[m
+[33mcommit 83a44b146fb07f2c56dc64eda3bd358332777681[m[m
+Author: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Feb 15 19:28:24 2021 -0500[m
+[m
+:[K[K[K:[K[K:[K[K[7mNo next tag  (press RETURN)[27m[24;1H[K[K:[K[K    videos + doodles[m
+:[K[K[m
+:[K[K[33mcommit 9b8fe47754e98c71f20bf53c166b948afb299fb8[m[m
+:[K[KAuthor: zerksis umrigar <umrigar@binghamton.edu>[m
+Date:   Mon Feb 15 12:19:45 2021 -0500[m
+[m
+    update syntax slides[m
+[7m(END)[27m[K[K[K[7m(END)[27m[K[K [KESCESC[K^J^J[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K-[Klog file: [Kaa[Kdd[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[K[7m(END)[27m[K[K[7m(END)[27m[K[K[?1l>pparmar2@remote00:~/projects/cs471$ clear
+[H[2J[3Jpparmar2@remote00:~/projects/cs471$ git log -3 labs[Ks/lab0.umt
+fatal: ambiguous argument 'labs/lab0.umt': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+pparmar2@remote00:~/projects/cs471$ ls
+announce.html  bin	  hws	      labs	README.md
+announce.umt   docs	  index.html  misc	slides
+assets	       exercises  index.umt   projects	umt.make
+pparmar2@remote00:~/projects/cs471$ cd lavbs[K[K[Kbs
+pparmar2@remote00:~/projects/cs471/labs$ ls
+index.html  index.umt  lab0  presentation  working
+pparmar2@remote00:~/projects/cs471/labs$ lscd labsls[Kgit log -3 labs/lab0.umt[K[K[K[K
+fatal: ambiguous argument 'labs/lab0': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+pparmar2@remote00:~/projects/cs471/labs$ cd ~
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd projects/cs471/
+pparmar2@remote00:~/projects/cs471$ ls
+announce.html  bin	  hws	      labs	README.md
+announce.umt   docs	  index.html  misc	slides
+assets	       exercises  index.umt   projects	umt.make
+pparmar2@remote00:~/projects/cs471$ git diff -r x[KXXXXX la[Kas[Kbs/lab0-[K.umt
+fatal: ambiguous argument 'XXXXX': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+pparmar2@remote00:~/projects/cs471$ cd ~./profile[1P/profile[C.profile
+bash: cd: /home/pparmar2/.profile: No such file or directory
+pparmar2@remote00:~/projects/cs471$ cd ~
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cs bin
+bash: cs: command not found
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd .
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd /
+pparmar2@remote00:/$ ls
+backup	    import		    microchip		 sbin
+bin	    initrd.img		    mnt			 srv
+boot	    initrd.img.old	    nslcd.conf.linux	 sys
+dev	    lib			    opt			 tmp
+etc	    lib32		    opt.local		 usr
+events.bin  lib64		    opt.old		 var
+home	    libnss-ldap.conf.linux  pam_ldap.conf.linux  vmlinuz
+home1	    libx32		    proc		 vmlinuz.old
+home.local  lost+found		    root
+home.save   media		    run
+pparmar2@remote00:/$ cd bin
+pparmar2@remote00:/bin$ ls
+bash	       fusermount      ntfscat	      systemd
+bunzip2        getfacl	       ntfscluster    systemd-ask-password
+busybox        grep	       ntfscmp	      systemd-escape
+bzcat	       gunzip	       ntfsfallocate  systemd-hwdb
+bzcmp	       gzexe	       ntfsfix	      systemd-inhibit
+bzdiff	       gzip	       ntfsinfo       systemd-machine-id-setup
+bzegrep        hciconfig       ntfsls	      systemd-notify
+bzexe	       hostname        ntfsmove       systemd-sysusers
+bzfgrep        ip	       ntfsrecover    systemd-tmpfiles
+bzgrep	       journalctl      ntfssecaudit   systemd-tty-ask-password-agent
+bzip2	       kbd_mode        ntfstruncate   tar
+bzip2recover   keyctl	       ntfsusermap    tcsh
+bzless	       kill	       ntfswipe       tempfile
+bzmore	       kmod	       openvt	      touch
+cat	       ln	       pidof	      true
+chacl	       loadkeys        ping	      udevadm
+chgrp	       login	       ping4	      ulockmgr_server
+chmod	       loginctl        ping6	      umount
+chown	       lowntfs-3g      ps	      uname
+chvt	       ls	       pwd	      uncompress
+cp	       lsblk	       rbash	      unicode_start
+cpio	       lsmod	       readlink       vdir
+csh	       mkdir	       red	      wdctl
+dash	       mknod	       rm	      which
+date	       mktemp	       rmdir	      ypdomainname
+dd	       more	       rnano	      zcat
+df	       mount	       run-parts      zcmp
+dir	       mountpoint      rzsh	      zdiff
+dmesg	       mt	       sed	      zegrep
+dnsdomainname  mt-gnu	       setfacl	      zfgrep
+domainname     mv	       setfont	      zforce
+dumpkeys       nano	       setupcon       zgrep
+echo	       nc	       sh	      zless
+ed	       nc.traditional  sh.distrib     zmore
+egrep	       netcat	       sleep	      znew
+false	       netstat	       ss	      zsh
+fgconsole      networkctl      stty	      zsh5
+fgrep	       nisdomainname   su
+findmnt        ntfs-3g	       sync
+fuser	       ntfs-3g.probe   systemctl
+pparmar2@remote00:/bin$ cd pp[K[K[Kstu[K[K[K stud[K[K[K[K[K[K[Kemacs stty [K[K[Kudent.pr[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd pro[K[K[K[K[K[Kcd ~
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd /bin
+pparmar2@remote00:/bin$ ls
+bash	       fusermount      ntfscat	      systemd
+bunzip2        getfacl	       ntfscluster    systemd-ask-password
+busybox        grep	       ntfscmp	      systemd-escape
+bzcat	       gunzip	       ntfsfallocate  systemd-hwdb
+bzcmp	       gzexe	       ntfsfix	      systemd-inhibit
+bzdiff	       gzip	       ntfsinfo       systemd-machine-id-setup
+bzegrep        hciconfig       ntfsls	      systemd-notify
+bzexe	       hostname        ntfsmove       systemd-sysusers
+bzfgrep        ip	       ntfsrecover    systemd-tmpfiles
+bzgrep	       journalctl      ntfssecaudit   systemd-tty-ask-password-agent
+bzip2	       kbd_mode        ntfstruncate   tar
+bzip2recover   keyctl	       ntfsusermap    tcsh
+bzless	       kill	       ntfswipe       tempfile
+bzmore	       kmod	       openvt	      touch
+cat	       ln	       pidof	      true
+chacl	       loadkeys        ping	      udevadm
+chgrp	       login	       ping4	      ulockmgr_server
+chmod	       loginctl        ping6	      umount
+chown	       lowntfs-3g      ps	      uname
+chvt	       ls	       pwd	      uncompress
+cp	       lsblk	       rbash	      unicode_start
+cpio	       lsmod	       readlink       vdir
+csh	       mkdir	       red	      wdctl
+dash	       mknod	       rm	      which
+date	       mktemp	       rmdir	      ypdomainname
+dd	       more	       rnano	      zcat
+df	       mount	       run-parts      zcmp
+dir	       mountpoint      rzsh	      zdiff
+dmesg	       mt	       sed	      zegrep
+dnsdomainname  mt-gnu	       setfacl	      zfgrep
+domainname     mv	       setfont	      zforce
+dumpkeys       nano	       setupcon       zgrep
+echo	       nc	       sh	      zless
+ed	       nc.traditional  sh.distrib     zmore
+egrep	       netcat	       sleep	      znew
+false	       netstat	       ss	      zsh
+fgconsole      networkctl      stty	      zsh5
+fgrep	       nisdomainname   su
+findmnt        ntfs-3g	       sync
+fuser	       ntfs-3g.probe   systemctl
+pparmar2@remote00:/bin$ cd ~.[K/.profile
+bash: cd: /home/pparmar2/.profile: No such file or directory
+pparmar2@remote00:/bin$ ls
+bash	       fusermount      ntfscat	      systemd
+bunzip2        getfacl	       ntfscluster    systemd-ask-password
+busybox        grep	       ntfscmp	      systemd-escape
+bzcat	       gunzip	       ntfsfallocate  systemd-hwdb
+bzcmp	       gzexe	       ntfsfix	      systemd-inhibit
+bzdiff	       gzip	       ntfsinfo       systemd-machine-id-setup
+bzegrep        hciconfig       ntfsls	      systemd-notify
+bzexe	       hostname        ntfsmove       systemd-sysusers
+bzfgrep        ip	       ntfsrecover    systemd-tmpfiles
+bzgrep	       journalctl      ntfssecaudit   systemd-tty-ask-password-agent
+bzip2	       kbd_mode        ntfstruncate   tar
+bzip2recover   keyctl	       ntfsusermap    tcsh
+bzless	       kill	       ntfswipe       tempfile
+bzmore	       kmod	       openvt	      touch
+cat	       ln	       pidof	      true
+chacl	       loadkeys        ping	      udevadm
+chgrp	       login	       ping4	      ulockmgr_server
+chmod	       loginctl        ping6	      umount
+chown	       lowntfs-3g      ps	      uname
+chvt	       ls	       pwd	      uncompress
+cp	       lsblk	       rbash	      unicode_start
+cpio	       lsmod	       readlink       vdir
+csh	       mkdir	       red	      wdctl
+dash	       mknod	       rm	      which
+date	       mktemp	       rmdir	      ypdomainname
+dd	       more	       rnano	      zcat
+df	       mount	       run-parts      zcmp
+dir	       mountpoint      rzsh	      zdiff
+dmesg	       mt	       sed	      zegrep
+dnsdomainname  mt-gnu	       setfacl	      zfgrep
+domainname     mv	       setfont	      zforce
+dumpkeys       nano	       setupcon       zgrep
+echo	       nc	       sh	      zless
+ed	       nc.traditional  sh.distrib     zmore
+egrep	       netcat	       sleep	      znew
+false	       netstat	       ss	      zsh
+fgconsole      networkctl      stty	      zsh5
+fgrep	       nisdomainname   su
+findmnt        ntfs-3g	       sync
+fuser	       ntfs-3g.probe   systemctl
+pparmar2@remote00:/bin$ cd ~
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd [K[K[Kls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ cd ~/projects/
+pparmar2@remote00:~/projects$ ls
+cs471
+pparmar2@remote00:~/projects$ git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': paramp  mpreet1 p
+Password for 'https://parampreetp@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ParampreetP/i471b.git/'
+pparmar2@remote00:~/projects$ git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ParampreetP/i471b.git/'
+pparmar2@remote00:~/projects$ git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ParampreetP/i471b.git/'
+pparmar2@remote00:~/projects$ git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ParampreetP/i471b.git/'
+pparmar2@remote00:~/projects$ git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': ParampreetP
+Password for 'https://ParampreetP@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ParampreetP/i471b.git/'
+pparmar2@remote00:~/projects$ git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/ParampreetP/i471b.git/'
+pparmar2@remote00:~/projects$ Pampee29677
+bash: Pampee29677: command not found
+pparmar2@remote00:~/projects$ Pampee29677git clone https://github.com/ParampreetP/i471b.git [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+Cloning into 'i471b'...
+Username for 'https://github.com': parampreetp
+Password for 'https://parampreetp@github.com': 
+remote: Enumerating objects: 3, done.[K
+remote: Counting objects:  33% (1/3)[Kremote: Counting objects:  66% (2/3)[Kremote: Counting objects: 100% (3/3)[Kremote: Counting objects: 100% (3/3), done.[K
+remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Receiving objects:  33% (1/3)Receiving objects:  66% (2/3)Receiving objects: 100% (3/3)Receiving objects: 100% (3/3), done.
+pparmar2@remote00:~/projects$ ls
+cs471  i471b
+pparmar2@remote00:~/projects$ ln -s pro[K[K[K[K[K[K[K[K[Kcd ~
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  media	 projects   tmp
+cs220	 Documents  i220b      Music	 Public     Videos
+cs471	 Downloads  i220X      Pictures  Templates
+pparmar2@remote00:~$ ln -s projects/i471b/ .
+pparmar2@remote00:~$ ls
+Arduino  Desktop    git-repos  i471b  Pictures	Templates
+cs220	 Documents  i220b      media  projects	tmp
+cs471	 Downloads  i220X      Music  Public	Videos
+pparmar2@remote00:~$ cd projects/
+pparmar2@remote00:~/projects$ ls
+cs471  i471b
+pparmar2@remote00:~/projects$ cd i471b/
+pparmar2@remote00:~/projects/i471b$ ls
+pparmar2@remote00:~/projects/i471b$ mkdir SUb[K[Kub,it[K[K[K[K[K[K[Ks[K sub,[Kmit
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ cd [K[K[Kls
+submit
+pparmar2@remote00:~/projects/i471b$ c[Kls -a
+.  ..  .git  .gitignore  submit
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ git status -s
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ cd ..
+pparmar2@remote00:~/projects$ ls
+cs471  i471b
+pparmar2@remote00:~/projects$ c[Kgit status -s
+fatal: not a git repository (or any parent up to mount point /import)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+pparmar2@remote00:~/projects$ cd i471b/
+pparmar2@remote00:~/projects/i471b$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+pparmar2@remote00:~/projects/i471b$ git commit -a -m "SOME O[KCOMMIT MSG"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+pparmar2@remote00:~/projects/i471b$ git push
+Username for 'https://github.com': parm ampreet  p
+Password for 'https://parampreetp@github.com': 
+Everything up-to-date
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ cd submit/
+pparmar2@remote00:~/projects/i471b/submit$ ls
+pparmar2@remote00:~/projects/i471b/submit$ cd ..
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ cd ..
+pparmar2@remote00:~/projects$ ls
+cs471  i471b
+pparmar2@remote00:~/projects$ cd i471b/
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ ls -dl ~/cs471 ~/i471X[KB[Kb
+lrwxrwxrwx 1 pparmar2 pparmar2 14 Feb 17 16:29 /home/pparmar2/cs471 -> projects/cs471
+lrwxrwxrwx 1 pparmar2 pparmar2 15 Feb 17 16:52 /home/pparmar2/i471b -> projects/i471b/
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ ls -l ~.[K/.ssh ~/cs471 ~/i447b
+ls: cannot access '/home/pparmar2/i447b': No such file or directory
+lrwxrwxrwx 1 pparmar2 pparmar2 14 Feb 17 16:29 /home/pparmar2/cs471 -> projects/cs471
+
+/home/pparmar2/.ssh:
+total 16
+-rw------- 1 pparmar2 pparmar2  571 Feb 17 16:27 authorized_keys
+-rw------- 1 pparmar2 pparmar2 2602 Feb 17 16:25 id_rsa
+-rw-r----- 1 pparmar2 pparmar2  571 Feb 17 16:25 id_rsa.pub
+-rw-r--r-- 1 pparmar2 pparmar2 2886 Feb 17 16:27 known_hosts
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ cd ..
+pparmar2@remote00:~/projects$ ls
+cs471  i471b
+pparmar2@remote00:~/projects$ cd i471b/
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ cd [K[K[Kls
+submit
+pparmar2@remote00:~/projects/i471b$ git checkout -b lab0
+Switched to a new branch 'lab0'
+pparmar2@remote00:~/projects/i471b$ git[K[K[Kmkdir -p submit
+pparmar2@remote00:~/projects/i471b$ ls
+submit
+pparmar2@remote00:~/projects/i471b$ ^C
+pparmar2@remote00:~/projects/i471b$ exit
+
+Script done on 2021-02-17 17:01:12-05:00 [COMMAND_EXIT_CODE="130"]

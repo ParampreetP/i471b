@@ -3,7 +3,7 @@
 import re
 import sys
 from collections import namedtuple
-
+import json
 
 """
 program
@@ -23,7 +23,6 @@ factor
   ;
 """
 
-#use nested function for encapsulation.
 def parse(text):
 
     def check(kind): return lookahead.kind == kind
@@ -45,25 +44,25 @@ def parse(text):
             return tok
 
     def program():
-        values = []
+        asts = []
         while (not check('EOF')):
-            values.append(expr())
+            asts.append(expr())
             match(';')
-        return values
+        return asts
 
     def expr():
         t = term()
-        while (check('+') or (check('-')) or (check('**')):#edit
+        while (check('+') or (check('-'))):
             kind = lookahead.kind
             match(kind)
             t1 = term()
-            t += (t1 if (kind == '+') else -t1)
+            t = Ast(kind, t, t1)
         return t
 
     def term():
         if (check('-')):
             match('-')
-            return - term()
+            return Ast('-', term())
         else:
             return factor()
 
@@ -71,7 +70,9 @@ def parse(text):
         if (check('INT')):
             value = int(lookahead.lexeme)
             match('INT')
-            return value
+            ast = Ast('INT')
+            ast['value'] = value
+            return ast
         else:
             match('(')
             value = expr()
@@ -108,18 +109,24 @@ def scan(text):
 def main():
     if (len(sys.argv) != 2): usage();
     contents = readFile(sys.argv[1]);
-    print(parse(contents))
+    asts = parse(contents)
+    print(json.dumps(asts, separators=(',', ':'))) #no whitespace
 
 def readFile(path):
     with open(path, 'r') as file:
         content = file.read()
     return content
 
-Token = namedtuple('Token', ['kind', 'lexeme'])
 
 def usage():
     print(f'usage: {sys.argv[0]} DATA_FILE')
     sys.exit(1)
+
+#use a dict so that we can add attributes dynamically
+def Ast(tag, *kids):
+    return { 'tag': tag, 'kids': kids }
+
+Token = namedtuple('Token', ['kind', 'lexeme'])
 
 if __name__ == "__main__":
     main()

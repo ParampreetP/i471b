@@ -1,0 +1,670 @@
+Script started on 2021-02-25 13:23:05-05:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1$ ls
+exercises  lab1.LOG  syntax  syntax.html  syntax.pdf  syntax.umt
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1$ cd[K[Kcd exercises/
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ ls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd l 
+s
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[Kls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd r 
+egex/Ex[K[K
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ./lexer.mjs 
+usage: lexer.mjs RE_TABLE_FILE INPUT_FILE
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ./lexer.mjs lexer.mjs data.txt
+TypeError: Cannot convert undefined or null to object
+    at Function.entries (<anonymous>)
+    at tableMatcher (file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex/table-lexer.mjs:23:12)
+    at new Lexer (file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex/table-lexer.mjs:3:23)
+    at main (file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex/lexer.mjs:20:17)
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ./lexer.mjs lexer.mjs data.txt[1P[1P[1@x[1@1[4@.mjs[C[C[C[C[C[1P data.txt[1P data.txt[1P data.txt[1P data.txt[1P data.txt[1P data.txt[1P data.txt[1P data.txt[1P data.txt. data.txtmjs data.txt
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'A'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'34'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'22'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'I'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'D'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'_'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'44'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'a'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'd'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'f'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m's'[39m }
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ cat data.txt 
+   21  23
+   A34  _22  ID_44
+   // asd sdfs
+   
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ cat lex1.mjs 
+export default {
+  $Ignore: /\s+/,  //this will be ignored.
+  INT: /\d+/,      //token with kind INT        
+  CHAR: /./,       //single char: must be last
+};
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ coproc [K[K[K[K[K[Kp[Kp
+cp: missing file operand
+Try 'cp --help' for more information.
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ copy
+bash: copy: command not found
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ cat lex1.mjs > lex3[K[K[K[K[K[K[K[K[K[K[K[K[K[Kx2[K[Kex2[K[K[K[K[K[K[K[Kls
+data.txt  lex1.mjs  lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ coproc [K[K[K[K[K[K[Kgit[K[K[Kcat lex1.mjs > lex2.mjc[Ks
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ cat lex2.mjs 
+export default {
+  $Ignore: /\s+/,  //this will be ignored.
+  INT: /\d+/,      //token with kind INT        
+  CHAR: /./,       //single char: must be last
+};
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ gedit[K[K[Kdit lex.[K[K2[Kx2.mjs 
+
+(gedit:2821596): Gtk-[1;33mWARNING[0m **: [34m13:44:56.904[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ gedit lex2.mjs 
+[C[C[2Pca[C[C[C[C[C[C[C[C[C[C[C1.mjs > lex2.mjs
+[C[Cls[Kcopy[2Ppat lex1.mjs 
+[C[Cls[Kcat data.txt 
+[C[Cls[K./lexer.mjs lex1.mjs data.txt[1@2[1P[C[C[C[C[C[C[C[C[C2.txt
+Error: ENOENT: no such file or directory, open 'data2.txt'
+[90m    at Object.openSync (node:fs:497:3)[39m
+[90m    at Object.readFileSync (node:fs:393:35)[39m
+    at main (file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex/lexer.mjs:21:19) {
+  errno: [33m-2[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'data2.txt'[39m
+}
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ;s
+bash: syntax error near unexpected token `;'
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ;s./lexer.mjs lex2.mjs data2.txt
+[C[C;s[K./lexer.mjs lex2.mjs data2.txt
+[C[C[15Pgedit lex2.mjs 
+[C[C[2Pca[C[C[C[C[C[C[C[C[C[C[C1.mjs > lex2.mjs
+[C[Cls[Kcat lex1.mjs > lex2.mjs
+[C[C[C[C[C[C[C[C[C[10P2.mjs 
+export default {
+  $Ignore: /\s+/,  //this will be ignored.
+  INT: /\d+/,      //token with kind INT        
+  ID: /\w+/,
+  CHAR: /./       //single char: must be last
+};
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ cat lex2.mjs 
+[C[C;s[K./lexer.mjs lex2.mjs data2.txt[1P.txt
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'A34'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'_22'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'ID_44'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'CHAR'[39m, lexeme: [32m'/'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'asd'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'sdfs'[39m }
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ./lexer.mjs lex2.mjs data.txt
+[C[C[16Pcat lex2.mjs 
+[C[C./lexer.mjs lex2.mjs data.txt
+[C[C[Kcat lex2.mjs > cat[K[K[Klex3.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lex2.mjs  lex3.mjs	lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ gedit lex3.mjs 
+
+(gedit:2825592): Gtk-[1;33mWARNING[0m **: [34m13:50:46.205[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ gedit lex3.mjs 
+[C[Cls[Kcat lex2.mjs > lex3.mjs
+[C[C./lexer.mjs lex2.mjs data.txt[1@3[1P
+^^?^C
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ clear
+[H[2J[3Jpparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ clear
+[C[C./lexer.mjs lex3.mjs data.txt
+[C[C[14Pgedit lex3.mjs 
+
+(gedit:2826247): Gtk-[1;33mWARNING[0m **: [34m13:52:31.855[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ gedit lex3.mjs 
+[C[C[10Pclear
+[C[C./lexer.mjs lex3.mjs data.txt
+Token { kind: [32m'INT'[39m, lexeme: [32m'21'[39m }
+Token { kind: [32m'INT'[39m, lexeme: [32m'23'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'A34'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'_22'[39m }
+Token { kind: [32m'ID'[39m, lexeme: [32m'ID_44'[39m }
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lex2.mjs  lex3.mjs	lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ ls
+data.txt  lex1.mjs  lex2.mjs  lex3.mjs	lexer.mjs  table-lexer.mjs
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/regex$ cd ..[K[K..
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ ls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd l 
+exer/
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ cd[K[Kvim p[Klexer.py 
+[?1000h[?2004h[?1049h[22;0;0t[?1h=[?2004h[1;24r[?12h[?12l[22;2t[22;1t[27m[23m[29m[m[H[2J[?25l[24;1H"lexer.py" 57L, 1633C[2;1H▽[6n[2;1H  [1;1H[>c]10;?]11;?[1;1H[34m#!/usr/bin/env python3[m
+
+[35mimport[m re
+[35mimport[m sys
+[35mfrom[m collections [35mimport[m namedtuple
+
+[34m#Using the next_match() function provides a workaround for the fact
+#that Python 3.7 does not support assignment expressions.  In fact,
+#the clumsy nested if-then-else handling in exactly this situation of
+#regex matching is cited as part of the rationale for the recent
+#addition of assignment expressions using the `:=` walrus operator to
+#Python 3.8.
+#<https://www.python.org/dev/peps/pep-0572/#the-importance-of-real-code>
+
+
+#returns pair containing regex match-object and token kind.  If token
+#should be ignored, kind should be returned as None.
+#note that m.group() gives lexeme after a successful match[m
+[38;5;130mdef[m [36mnext_match[m(text):
+    m = re.compile([31mr'\s+'[m).match(text)
+    [38;5;130mif[m (m): [38;5;130mreturn[m (m, [36mNone[m)  [34m#None kind means ignore[m[23;5Hm = re.compile([31mr'\d+'[m).match(text)[24;63H1,1[11CTop]2;lexer.py (~/i471b/work/lab1/exercises/lexer) - VIM]1;lexer.py[1;1H[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\[?1000l[?1006h[?1002h[?1006l[?1002l[?1006h[?1002h[27m[23m[29m[m[H[2J[?25l[1;1H[96m#!/usr/bin/env python3[m
+
+[38;5;81mimport[m re
+[38;5;81mimport[m sys
+[38;5;81mfrom[m collections [38;5;81mimport[m namedtuple
+
+[96m#Using the next_match() function provides a workaround for the fact
+#that Python 3.7 does not support assignment expressions.  In fact,
+#the clumsy nested if-then-else handling in exactly this situation of
+#regex matching is cited as part of the rationale for the recent
+#addition of assignment expressions using the `:=` walrus operator to
+#Python 3.8.
+#<https://www.python.org/dev/peps/pep-0572/#the-importance-of-real-code>
+
+
+#returns pair containing regex match-object and token kind.  If token
+#should be ignored, kind should be returned as None.
+#note that m.group() gives lexeme after a successful match[m
+[93mdef[m [1m[96mnext_match[m(text):
+    m = re.compile([95mr'\s+'[m).match(text)
+    [93mif[m (m): [93mreturn[m (m, [1m[96mNone[m)  [96m#None kind means ignore[m[23;5Hm = re.compile([95mr'\d+'[m).match(text)[24;63H1,1[11CTop
+"lexer.py" 57L, 1633C[1;1H[?25h[?25l[24;53H:[1;1H[24;1H[K[24;1H:[?2004h[?25hw[?25l[?25hq[?25l[?25h
+[?25l[?1006l[?1002l[?2004l"lexer.py" 57L, 1633C written
+]2;Terminal - ]1;Terminal - [23;2t[23;1t[22;2t[22;1t[23;2t[23;1t
+
+[?2004l[?1l>[?25h[?1049l[23;0;0tpparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ cat lexer.py
+#!/usr/bin/env python3
+
+import re
+import sys
+from collections import namedtuple
+
+#Using the next_match() function provides a workaround for the fact
+#that Python 3.7 does not support assignment expressions.  In fact,
+#the clumsy nested if-then-else handling in exactly this situation of
+#regex matching is cited as part of the rationale for the recent
+#addition of assignment expressions using the `:=` walrus operator to
+#Python 3.8.
+#<https://www.python.org/dev/peps/pep-0572/#the-importance-of-real-code>
+
+
+#returns pair containing regex match-object and token kind.  If token
+#should be ignored, kind should be returned as None.
+#note that m.group() gives lexeme after a successful match
+def next_match(text):
+    m = re.compile(r'\s+').match(text)
+    if (m): return (m, None)  #None kind means ignore
+
+    m = re.compile(r'\d+').match(text)
+    if (m): return (m, 'INT')
+
+    m = re.compile(r'.').match(text)  #must be last: match any char
+    if (m): return (m, m.group())
+
+
+def scan(text):
+    tokens = []
+    while (len(text) > 0):
+        (match, kind) = next_match(text)
+        lexeme = match.group()
+        if (kind): tokens.append(Token(kind, lexeme))
+        text = text[len(lexeme):]
+    return tokens
+
+def main():
+    if (len(sys.argv) != 2): usage();
+    contents = readFile(sys.argv[1]);
+    tokens = scan(contents)
+    for t in tokens: print(t)
+
+def readFile(path):
+    with open(path, 'r') as file:
+        content = file.read()
+    return content
+
+Token = namedtuple('Token', ['kind', 'lexeme'])
+
+def usage():
+    print(f'usage: {sys.argv[0]} DATA_FILE')
+    sys.exit(1)
+
+if __name__ == "__main__":
+    main()
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ gedit *
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ./lexer.py
+usage: ./lexer.py DATA_FILE
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ./lexer.py data.txt 
+Token(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='A', lexeme='A')
+Token(kind='INT', lexeme='34')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='22')
+Token(kind='I', lexeme='I')
+Token(kind='D', lexeme='D')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='44')
+Token(kind='/', lexeme='/')
+Token(kind='/', lexeme='/')
+Token(kind='a', lexeme='a')
+Token(kind='s', lexeme='s')
+Token(kind='d', lexeme='d')
+Token(kind='s', lexeme='s')
+Token(kind='d', lexeme='d')
+Token(kind='f', lexeme='f')
+Token(kind='s', lexeme='s')
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ./lexer.py data.txt [K
+[C[C[3Pgedit *
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ cd ..
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ ls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd c 
+alc/
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ ls
+calc.mjs  calc.py  data.txt  expn-data.txt
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ gedit *
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ gedit *
+
+(gedit:2834572): Gtk-[1;33mWARNING[0m **: [34m14:26:18.593[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ ls
+calc.mjs  calc.py  data.txt  expn-data.txt
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ clear
+[H[2J[3Jpparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ cd ..
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd l 
+exer/
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ gls[1Pgedit *
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$ cd ..
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd c 
+alc/
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ ls
+calc.mjs  calc.py  data.txt  expn-data.txt
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ gedit **[K
+
+(gedit:2836046): Gtk-[1;33mWARNING[0m **: [34m14:32:16.277[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ ^C
+pparmar2@remote-n21:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ exit
+
+Script done on 2021-02-25 14:41:22-05:00 [COMMAND_EXIT_CODE="130"]
+
+Script started on 2021-02-25 21:42:17-05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="80" LINES="24"]
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1$ ls
+exercises  lab0.LOG  lab1.LOG  syntax  syntax.html  syntax.pdf	syntax.umt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1$ cd exercises/
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ ls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ c [K[Kd lexer/[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[Kc [Kd lexer/
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+
+(gedit:3747328): Gtk-[1;33mWARNING[0m **: [34m21:45:21.497[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+[K./lexer.py data.txt 
+Token(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='A', lexeme='A')
+Token(kind='INT', lexeme='34')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='22')
+Token(kind='I', lexeme='I')
+Token(kind='D', lexeme='D')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='44')
+Token(kind='/', lexeme='/')
+Token(kind='/', lexeme='/')
+Token(kind='a', lexeme='a')
+Token(kind='s', lexeme='s')
+Token(kind='d', lexeme='d')
+Token(kind='s', lexeme='s')
+Token(kind='d', lexeme='d')
+Token(kind='f', lexeme='f')
+Token(kind='s', lexeme='s')
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+ls
+./lexer.py data.txt 
+[13Pgedit *
+
+(gedit:3748453): Gtk-[1;33mWARNING[0m **: [34m21:46:59.206[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+ls[K
+gedit *
+
+(gedit:3749113): Gtk-[1;33mWARNING[0m **: [34m21:48:21.042[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+ls[K
+./lexer.py data.txt 
+  File "./lexer.py", line 38
+    comment = comment + 1
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+./lexer.py data.txt 
+[13Pgedit *
+
+(gedit:3749989): Gtk-[1;33mWARNING[0m **: [34m21:51:02.017[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+./lexer.py data.txt 
+  File "./lexer.py", line 38
+    comment = comment + 1
+                        ^
+TabError: inconsistent use of tabs and spaces in indentation
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+^C
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+./lexer.py data.txt 
+[13Pgedit *
+
+(gedit:3750485): Gtk-[1;33mWARNING[0m **: [34m21:52:00.993[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+./lexer.py data.txt 
+  File "./lexer.py", line 40
+    if (kind and temp is False and comment !=2):
+                                               ^
+TabError: inconsistent use of tabs and spaces in indentation
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+./lexer.py data.txt 
+[13Pgedit *
+
+(gedit:3750719): Gtk-[1;33mWARNING[0m **: [34m21:52:38.209[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+gedit *
+./lexer.py data.txt 
+Token(kind='INT', lexeme='21')
+Token(kind='INT', lexeme='23')
+Token(kind='A', lexeme='A')
+Token(kind='INT', lexeme='34')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='22')
+Token(kind='I', lexeme='I')
+Token(kind='D', lexeme='D')
+Token(kind='_', lexeme='_')
+Token(kind='INT', lexeme='44')
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+ls
+data.txt  lexer.mjs  lexer.py
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/lexer$  
+cd[K
+[Kcd ..
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ ls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd calc/
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ l 
+s
+calc.mjs  calc.py  data.txt  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ c 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg 
+edit *
+
+(gedit:3751071): Gtk-[1;33mWARNING[0m **: [34m21:54:47.665[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ l 
+s
+calc.mjs  calc.py  data.txt  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ . 
+/calc.mjs data.txt 
+file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc/calc.mjs:59
+    while (check('+') || check('-') || check('**') {
+                                                   ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ ./calc.mjs data.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd calc/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ..[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd calc/[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *
+
+(gedit:3753040): Gtk-[1;33mWARNING[0m **: [34m21:59:15.002[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ gedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./calc.mjs data.txt 
+file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc/calc.mjs:67
+      ]
+      ^
+
+SyntaxError: Unexpected token ']'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ ./calc.mjs data.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:3753246): Gtk-[1;33mWARNING[0m **: [34m21:59:38.172[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ gedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./calc.mjs data.txt 
+[ [33m0[39m, [33m3[39m ]
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ c 
+at data.txt 
+1 + 2 - 3;
+
+--2 - (3 - 4);
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ l 
+s
+calc.mjs  calc.py  data.txt  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/calc$ c 
+d ..
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ cd ast/
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ls 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+ast.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ls 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd ast/
+[C[2P..[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccat data.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./c[7@alc.mjs[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[K
+
+(gedit:3753986): Gtk-[1;33mWARNING[0m **: [34m22:03:12.503[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ls 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+ast.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ./ 
+ast.mjs data.json 
+file:///import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast/ast.mjs:59
+    while (check('+') || check('-') || check('**') {
+                                                   ^
+
+SyntaxError: Unexpected token '{'
+[90m    at Loader.moduleStrategy (node:internal/modules/esm/translators:147:18)[39m
+[90m    at async link (node:internal/modules/esm/module_job:48:21)[39m
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ./ast.mjs data.json [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *
+
+(gedit:3755885): Gtk-[1;33mWARNING[0m **: [34m22:06:45.234[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ gedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./ast.mjs data.json 
+expecting ( at [
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ./ast.mjs data.json [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[K
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ py 
+thon
+Python 2.7.16 (default, Oct 10 2019, 22:02:15) 
+[GCC 8.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+KeyboardInterrupt
+>>> clear
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> ^V[K
+KeyboardInterrupt
+>>> :wq
+  File "<stdin>", line 1
+    :wq
+    ^
+SyntaxError: invalid syntax
+>>> claer
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'claer' is not defined
+>>> clear
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'clear' is not defined
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> 
+KeyboardInterrupt
+>>> ^V^D[K[Kquit
+Use quit() or Ctrl-D (i.e. EOF) to exit
+>>> quit()
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ cl 
+ear
+[H[2J[3Jpparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ clear[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./ast.mjs data.json 
+expecting ( at [
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ls 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ks
+ast.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ls 
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./ast.mjs data.json [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit *
+
+(gedit:3758093): Gtk-[1;33mWARNING[0m **: [34m22:12:32.326[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ gedit *[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls 
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./ast.mjs data.json 
+expecting ( at [
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ./ 
+ast. data.txt 
+bash: ./ast.: No such file or directory
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ./ 
+ast.mjs data.txt 
+[{"tag":"-","kids":[{"tag":"+","kids":[{"tag":"INT","kids":[],"value":1},{"tag":"INT","kids":[],"value":2}]},{"tag":"INT","kids":[],"value":3}]},{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"INT","kids":[],"value":2}]}]},{"tag":"-","kids":[{"tag":"INT","kids":[],"value":3},{"tag":"INT","kids":[],"value":4}]}]}]
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ 
+[Kpparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ./p[Kast.py data.txt 
+[{"tag":"-","kids":[{"tag":"+","kids":[{"tag":"INT","kids":[],"value":1},{"tag":"INT","kids":[],"value":2}]},{"tag":"INT","kids":[],"value":3}]},{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"-","kids":[{"tag":"INT","kids":[],"value":2}]}]},{"tag":"-","kids":[{"tag":"INT","kids":[],"value":3},{"tag":"INT","kids":[],"value":4}]}]}]
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ 
+[Kpparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ 
+[Kpparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ p
+
+ython -m ja[Kson.tool data.json 
+[
+    {
+        "kids": [
+            {
+                "kids": [
+                    {
+                        "kids": [],
+                        "tag": "INT",
+                        "value": 1
+                    },
+                    {
+                        "kids": [],
+                        "tag": "INT",
+                        "value": 2
+                    }
+                ],
+                "tag": "+"
+            },
+            {
+                "kids": [],
+                "tag": "INT",
+                "value": 3
+            }
+        ],
+        "tag": "-"
+    },
+    {
+        "kids": [
+            {
+                "kids": [
+                    {
+                        "kids": [
+                            {
+                                "kids": [],
+                                "tag": "INT",
+                                "value": 2
+                            }
+                        ],
+                        "tag": "-"
+                    }
+                ],
+                "tag": "-"
+            },
+            {
+                "kids": [
+                    {
+                        "kids": [],
+                        "tag": "INT",
+                        "value": 3
+                    },
+                    {
+                        "kids": [],
+                        "tag": "INT",
+                        "value": 4
+                    }
+                ],
+                "tag": "-"
+            }
+        ],
+        "tag": "-"
+    }
+]
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ 
+[K[Apparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/as
+
+t$ 
+[K[Apparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ ls
+ast.mjs  ast.py  data.json  data.txt  expn-data.json  expn-data.txt
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ clear
+[H[2J[3Jpparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises/ast$ cd ..
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ ls
+01-regex  02-lexer  03-calc  04-ast  ast  calc	lexer  regex
+pparmar2@remote01:/import/linux/home1/pparmar2/i471b/work/lab1/exercises$ exit
+
+Script done on 2021-02-25 22:16:49-05:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,785 @@
+Script started on 2021-03-04 13:17:53-05:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="151" LINES="34"]
+pparmar2@remote04:/import/linux/home1/pparmar2/i471b/work/lab2$ ls
+lab2.LOG  scheme1  scheme1.html  scheme1.pdf  scheme1.umt
+pparmar2@remote04:/import/linux/home1/pparmar2/i471b/work/lab2$ racket
+Welcome to Racket v7.9 [bc].
+> (+ 1 1_)[10G[K[9G[K)
+2
+> (+ (/ 1 2) (/ 1 3) (/ 1 4) (/1 5))
+; /1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (+ (/ 1 2) (/ 1 3) (/ 1 4) (/1 5))> (+[1@1 > (+[P [6G[1@ ([6G[1@1 
+; /1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/1 5))[34G[1@ 1
+137/60
+> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))1[7G[1@. [8G[1@5 
+2.7833333333333337
+> > (+ 1.5 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5)).[8G[P [8G[1@0 
+2.283333333333333
+> > (+ 1.0 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5))[8G5[42G[7G[2P [40G[39G )[40G()[41G[K1[41G[K/ 1 6) (/ 1 7))
+363/140
+> > (+ 1 (/ 1 2) (/ 1 3) (/ 1 4) (/ 1 5) (/ 1 6) (/ 1 7))[6G[P [6G[1@. [7G[1@5 
+2.092857142857143
+> (/ 1 2)
+1/2
+> (/ 1.0/[9G[K 2.0)
+0.5
+> (ep> (e[Kxpr 1 2)
+; expr: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (expt 1 1)
+1
+> (expt 1 2)
+1
+> ((> ([K0> ([K-(> (-[K 3(exptx[12G[K x 3) 4(expt [18G[1@24[19G[P((expt[25G[25Gx[27G[27G2[28G)[29G)
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (- 3(expt x 3) 2(expt x 2))[29G )[30G4)
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (- 3(expt x 3) 2(expt x 2) 4)[30G)[K[29G)[K)4)
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+4
+; readline-input:16:28: read-syntax: unexpected `)` [,bt for context]
+> > (- 3(expt x 3) 2(expt x 2))4)[31G[K[30G[K
+; x: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (- 3(expt x 3) 2(expt x 2))[29G[K[27G)[K[26G)[K[25G)[K[24G)[K[23G)[K[22G)[K[21G)[K[20G)[K[19G)[K[18G)[K[17G)[K[17G[K[15G)[K[14G)[K[13G)[K[12G)[K[11G)[K[10G)[K[9G)[K[8G)[K[7G)[K[6G)[K> (-)[K> ()[K> ([Kdefine p(poly)[10G[Pp[10G[1@Pp[10G[Pp[10G[1@ p[11G[1@Pp[12G[P([12G[1@ ((poly)[18G[K )[19G[K2[19G[K3 -2 4 -1))
+; poly: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (define P (poly 3 -2 4 -1))[29G[K[28G[K[27G[K[26G[K[25G[24G[K[23G[22G[K[21G[K[20G[19G[K[18G[17G[K[16G[K[15G[K[14G[K[13G[KP(x) [17G[16G[K[15G[K[14G[K[13G[KP [14G[13G[KP(x)[16G[K[15G[K[14G[K labda[19G[K[18G[K[17G[Kmbda(x) [24G([24G[K[23G[K[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[K[14G[13G[K[12G[11G[Ke (poly x) (* x x) 5))
+; readline-input:19:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define e (poly x) (* x x) 5)
+; [,bt for context]
+; readline-input:19:29: read-syntax: unexpected `)` [,bt for context]
+> > (define e (poly x) (* x x) 5))[32G[K
+; readline-input:20:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define e (poly x) (* x x) 5)
+; [,bt for context]
+> > (define e (poly x) (* x x) 5)[31G[K[30G[K[29G[28G[K[27G[K[26G[25G[K[24G[23G[K[22G[K[21G[20G[K[19G[K[18G[17G[K[16G[K[15G[K[14G[K[13G[K[12G[11G[K[10G[9G[K[8G[K[7G[K[6G[K> (d[K> ([K> [K( * 3[7G[K[6G> ( [K> (3 3 expt)> ([1@*3> (*[P  3 expt[11G)[K[11G[Kt 4))[14G4))[14G))[K4[14G ))[15G3))> ([1@(*> ([1@+(> (+[1@ (> ([1@ ++ (* 3 expt 4 3)[21G ) [21G)[K[21G[K[21G)) ( [24G*[24G[K *[25G[K[24G* 4 ))[28G ))[28G( ))[29Ge ))[30Gx ))[31Gp ))[32Gt ))[34G ))[34G4 ))[36G ))[36G1 ))  )[40G)> ([1@( > ([1@-(( + (* 3 expt 4 3)) (* 4 (expt 4 1 )))(+ (* 2 (expt 4 2))))[62G ))[63G1))
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:21:62: read-syntax: unexpected `)` [,bt for context]
+> > (-( + (* 3 expt 4 3)) (* 4 (expt 4 1 )))(+ (* 2 (expt 4 2)) 1))[42G[1@ )[42G[P))[43G[1@ (> (-[1@ (( + (* 3 expt 4 3)) (* 4 (expt 4 1 ))) (+ (* 2 (expt 4 2)) 1)
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:22:64: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3)) (* 4 (expt 4 1 ))) (+ (* 2 (expt 4 2)) 1)))
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:23:64: read-syntax: unexpected `)` [,bt for context]
+; readline-input:23:65: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3)) (* 4 (expt 4 1 ))) (+ (* 2 (expt 4 2)) 1)))[68G[K[40G[P)
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:24:63: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3)) (* 4 (expt 4 1))) (+ (* 2 (expt 4 2)) 1))
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:25:63: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3)) (* 4 (expt 4 1))) (+ (* 2 (expt 4 2)) 1))[43G[P([25G[P(
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:26:61: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3))(* 4 (expt 4 1)))(+ (* 2 (expt 4 2)) 1))(* 4 (expt 4 1)[41G[P(
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+> > (- ( + (* 3 expt 4 3))(* 4 (expt 4 1))(+ (* 2 (expt 4 2)) 1))[41G[1@)()[42G[1@ ((+ (* 2 (expt 4 2)) 1)))
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:28:62: read-syntax: unexpected `)` [,bt for context]
+; readline-input:28:63: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3))(* 4 (expt 4 1))) (+ (* 2 (expt 4 2)) 1)))[66G[K[65G[K
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+> > (- ( + (* 3 expt 4 3))(* 4 (expt 4 1))) (+ (* 2 (expt 4 2)) 1))
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:30:62: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + (* 3 expt 4 3))(* 4 (expt 4 1))) (+ (* 2 (expt 4 2)) 1))[61G 1))[K
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+32
+> > (- ( + (* 3 expt 4 3))(* 4 (expt 4 1))) (+ (* 2 (expt 4 2) 1))[61G) 1))[61G) 1)[65G )[67G)[67G[K[65G)[K)([47G[1@ *[44G[1@ +([26G[1@ * ([11G[1@ *
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:32:66: read-syntax: unexpected `)` [,bt for context]
+> > (- ( + ( * 3 expt 4 3))( * 4 (expt 4 1))) ( + ( * 2 (expt 4 2)) 1))
+; *: contract violation
+;   expected: number?
+;   given: #<procedure:expt>
+;   argument position: 2nd
+; [,bt for context]
+33
+; readline-input:33:66: read-syntax: unexpected `)` [,bt for context]
+> clear
+; clear: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  l
+; l: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> d> [K(define list1 '(a[19G[K1 2 3 4 5))
+> > (define list1 '(1 2 3 4 5))
+> (define list2 '(a b c d e f[29G[K[28G))
+> (car list1)
+1
+> > (car list1)[6G[P > (c[P > (c[1@d [6G[1@r 
+'(2 3 4 5)
+> > (cdr list1)[11G1)[K[11G21)[12G)[K[12G[K[11G[Kt [12G2)
+'(b c d e)
+> (cat[6G[K> (c[Kr> (c[Kar[6G[K> (c[K> ([Kfirst list2)
+'a
+> (car (cr[10G[Kdr (cdr list1)))
+3
+> > (car (cdr (cdr list1)))[22G21)))[23G)))[K
+'c
+> (caddr list1)
+3
+> (append list1 list2)
+'(1 2 3 4 5 a b c d e)
+> (list1)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(1 2 3 4 5)
+; [,bt for context]
+> (> [K'(list1)
+'(list1)
+> > '(list1)[10G[K[9G[K[8G[K[7G[K[6G[K> '([K> '[K> [K(car[6G[K> (c[K> ([K> (list1)> ([7@append [16G list2)
+'(1 2 3 4 5 a b c d e)
+> (append list1)
+'(1 2 3 4 5)
+> > (append list1)9[17G[K[16G[K[15G[K[14G[K[13G[K[12G[K[11G[K[10G[9G[K[8G[K[7G[K[6G[K> (a[K> ([K> [K(cadrr list2)
+; cadrr: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (cadrr list2)
+; cadrr: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (append list2)
+'(a b c d e)
+> > (append list2)[9G[P [8G[P [7G[P [6G[P > (a[P > ([P > ([1@c > (c[1@a [6G[1@d [7G[1@d [8G[1@r 
+'c
+> > (caddr list2)[8G[1@dr
+'d
+> > (cadddr list2)[8G[Pr[7G[Pr[7G[1@dr[8G[1@dr[9G[1@dr
+; caddddr: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (caddddr list2)[9G[Pr
+'d
+> > (cadddr list2)[8G[Pr[7G[Pr
+'b
+> (tail list2)
+; tail: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (> [K(define x $)
+; $: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> (define x $)
+; $: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (define x $)[14G[K[13G[K4)
+> (define myexp (- ( + (* 4 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )
+; readline-input:81:77: read-syntax: unexpected `)` [,bt for context]
+> > > (define myexp (- ( + (* 4 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) ) [27G[P [27G[1@3 
+; readline-input:82:77: read-syntax: unexpected `)` [,bt for context]
+> > (define myexp (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )[27G4[81G[27G3[81G> [Kmyexp
+189
+> > myexp> [8@(define [16G (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )[27G4[81G[11Gx 4)[K[13G14)[14G04)[15G)[K
+> > (define x 10)> myexp[K> [8@(define [16G (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )
+; readline-input:85:77: read-syntax: unexpected `)` [,bt for context]
+> > (define myexp (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )[11Gx 10)[K> myexp[K
+2937
+> > myexp> [8@(define [16G (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) ) [62G[1@(2[63G[1@*2[64G[1@ 2
+> > (define myexp (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ (* 2 (expt x 2)) 1)) )> [8P[8G[K> [8@(define [16G (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )[11Gx 10)[K[11Gmyexp (- ( + (* 4 (expt x 3)) (* 4 (expt x 1))) (+ 2 (expt x 2)) 1)) )[11Gx 4)[K
+> > (define x 4)[11Gmyexp (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ (* 2 (expt x 2)) 1)) )
+> > (define myexp (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ (* 2 (expt x 2)) 1)) )[11Gx 4)[K> myexp[K
+175
+> > myexp> [8@(define [16G (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ (* 2 (expt x 2)) 1)) )[11Gx 4)[K[13G04)[14G04)[15G04)[16G04)[17G04)[18G\4)[19G\4)[20G\4)[20G4)[K[19G4)[K[18G4)[K[17G4)[K[16G4)[K[15G4)[K[14G4)[K[13G4)[K4[14G0)[15G0)[16G0)[17G0)[18G0)[19G0)[20G0)[21G0)
+> > (define x 400000000)> myexp[K> [8@(define [16G (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ (* 2 (expt x 2)) 1)) )
+> > (define myexp (- ( + (* 3 (expt x 3)) (* 4 (expt x 1))) (+ (* 2 (expt x 2)) 1)) )[11Gx 400000000)[K> myexp[K
+191999999680000001599999999
+> (define p 1000)
+> (define r .05)
+> (define n 1)
+> (define t %)[14G[K[13G[K5)
+> (define A([12G[K ( * P (ep[21G[Kxpt ( _ 1 ( / r n) ) (* n t)))
+  
+      (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+    (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))[27G[1@+_[28G[P 
+  
+  
+  
+  
+  
+  
+  
+  cl
+  
+  
+  
+  
+  claer
+  clear
+  st  s[K  [K
+  
+  )
+  ))))
+; readline-input:98:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define A (* P (expt (_ 1 (/ r n)) (* n t))) (define A (* P (expt (_ 1
+;     (/ r n)) (* n t))) (define A (* P (expt (+ 1 (/ r n)) (* n t))) cl claer
+;     clear)))
+; [,bt for context]
+; readline-input:119:2: read-syntax: unexpected `)` [,bt for context]
+; readline-input:119:3: read-syntax: unexpected `)` [,bt for context]
+> > > (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[7A> [K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[7A> > (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[6G[K  ))[K  )[K  [K [K[A  )  [K [K[A[8G[7G[K[6G[K  cl[K  c[K  [K [K[A[8G[7G[K[6G[K  cl[K  c[K  [K [K[A  cl  c[K  [K [K[A[51G[50G[K[49G[K[48G[K[47G[K[46G[45G[K[44G[43G[K[42G[K[41G[40G[K[39G[38G[K[37G[K[36G[35G[K[34G[33G[K[32G[31G[K[30G[29G[K[28G[27G[K[26G[25G[K[24G[23G[K[22G[K[21G[K[20G[K[19G[K[18G[17G[K[16G[15G[K[14G[13G[K[12G[11G[K[10G[9G[K[8G[K[7G[K[6G[K  (d[K  ([K  [K [K[A[51G[50G[K[49G[K[48G[K[47G[K[46G[45G[K[44G[43G[K[42G[K[41G[40G[K[39G[38G[K[37G[K[36G[35G[K[34G[33G[K[32G[31G[K[30G[29G[K[28G[27G[K[26G[25G[K[24G[23G[K[22G[K[21G[K[20G[K[19G[K[18G[17G[K[16G[15G[K[14G[13G[K[12G[11G[K[10G[9G[K[8G[K[7G[K[6G[K  (d[K  ([K  [K [K[A[51G [27G[1@+__[28G[P 
+  )
+; P: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )[A[27G_
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[7A[11Gt 5)[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[7A[15G[11Gn 1)[11Gr .05)[11Gp 1000)[11G[P [11G[1@P 
+> > (define P 1000)[11GA ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )
+> A
+1276.2815625000003
+> > A> (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )[A[11GP 1000)[K
+[K[A[18G[11GA ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[7A[11Gt 5)[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[7A[15G[11Gn 1)[11Gr .05)[11Gp 1000)[10G[Pp[10G[1@Pp[10G[Pp[9G[Pp[9G[1@ep[10G[1@ p[11G[P [11G[1@P 
+> > > (define P 1000)> A[K> (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )[A[27G_
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[7A[11Gt 5)[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[7A[15G[11Gn 1)[11Gr .05)[11Gp 1000)[11Gr .05)[K
+> > (define r .05)[11GP 1000)> A[K> (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )[A[27G_
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[7A[11Gt 5)[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[7A[15G[11Gn 1)[11Gp 1000)[11Gn 1)[K[11Gt 5)[11Gn 1)
+> > (define n 1)[11Gr .05)[11GP 1000)> A[K> (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )[A[27G_
+  (define A ( * P (expt ( _ 1 ( / r n) ) (* n t)))
+  (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  cl
+  claer
+  clear
+  )
+  ))))[7A[11Gt 5)[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[7A[15G
+> > (define t 5)[11Gn 1)[11Gr .05)[11GP 1000)> A[K> (define A ( * P (expt ( + 1 ( / r n) ) (* n t)))
+  )  [K [K[A[51G)
+> A
+1276.2815625000003
+> (append list1)
+'(1 2 3 4 5)
+> (appent[9G[Kd list2)
+'(a b c d e)
+> (append list1 list2)
+'(1 2 3 4 5 a b c d e)
+> (cdr list2)
+'(b c d e)
+> (caddr list2)
+'c
+> > (caddr list2)[7G[Pr
+'b
+> (car (cdr list2))
+'b
+> > (car (cdr list2))r[6G[P > (c[P > (c[1@d [6G[1@r  (cdrr[13G[1@ l[13G[1@( [14G[1@c [15G[1@d [16G[1@r [18G[1@ l list2)))
+'(d e)
+> > (cdr (cdr (cdr  list2)))> [K> > (append ) [11G()[13G)([12Gl))[13Gi))[14Gs))[15Gt))[16G1))([12G[1@cl[13G[1@dl[14G[1@rl[15G[1@ l[16G[1@(l[17G[1@cl[18G[1@dl[19G[1@rl[20G[1@ llist1)[28G)[29G)))[29G[K[28G )[29G()[30Gc)[31Gd)[32Gr)[33G()[33G)[K[33G )[34G()[35Gc)[36Gd)[37Gr)[38G )[39Gl)[40Gi)[41Gs)[42Gt)[43G2)[43G)[K[42G)[K[41G)[K[40G)[K[39G)[K[39G()[40Gc)[41Gd)[42Gr)[43G )[44G()[45Gl)[46Gi)[47Gs)[48Gt)[49G2)[51G)[52G)[53G)
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > > (append (cdr (cdr list1)) (cdr (cdr (cdr (list2))))
+  )   )[K[A[55G)
+[K[A[54G[53G )[K
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > (append (cdr (cdr list1)) (cdr (cdr (cdr (list2))) )
+  )  [K [K[A[55G[54G[K[53G[52G[K) )
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > (append (cdr (cdr list1)) (cdr (cdr (cdr (list2))) )
+  )  [K [K[A[55G[54G[K))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > (append (cdr (cdr list1)) (cdr (cdr (cdr (list2))) ))[55G[K[54G[K[53G[52G[K[51G[K))))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > (append (cdr (cdr list1)) (cdr (cdr (cdr (list2)))))[54G )[56G)[56G[K
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > (append (cdr (cdr list1)) (cdr (cdr (cdr (list2)))) )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> (define (Recct[16G[K[15G[K[14G[K[13G[K[12G[KREC[14G[K[13G[K[12G[Krect [16G-area-[21G[K width e[28G[Kheiht[32G[K[31G[Kght) (* we[40G[Kidg[42G[Kth heg[47G[Kight))
+> (rect-area 2 3)
+6
+> > (rect-area 2 3)[14G42 3)2 [16G3)[K[15G3)[K[14G3)[K[14G43)[15G 3)[16G53)[17G)[K
+20
+> > (rect-area 4 5)[14G2 3)> ([8@define ([22Gwidth height) (* width height))[39G[1@ w[39G[1@2 [20G[P [19G[P [18G[P [17G[P [17G[1@p [18G[1@e [19G[1@r [20G[1@i 
+> > > > (define (rect-peri width height) (* 2 width height))> ([8P[9Garea 4 5)[K[12G[P [11G[P [10G[P [9G[P [9G[1@p [10G[1@e [11G[1@r [12G[1@i 
+40
+> > (rect-peri 4 5)> ([8@define ([22Gwidth height) (* 2 width height)) [41G[1@(w[42G[1@+w[43G[1@ wwidth height)[58G)
+> > (define (rect-peri width height) (* 2 (+ width height)))> ([8P[14G4 5)[K
+18
+> > (rect-peri 4 5)> ([8@define ([22Gwidth height) (* 2 (+ width height)))[41G[3P[53G))[K> ([8P[9Garea 4 5)[K[14G2 3)> ([8@define ([22Gwidth height) (* width height))> (append (cdr (cdr list1)) (cdr (cdr (cdr (list2)))) )[54G)[K[54G )[27G[P 
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+> > (append (cdr (cdr list1) (cdr (cdr (cdr (list2)))) )
+  )[A> [K
+[K[A> > (append (cdr (cdr list1) (cdr (cdr (cdr (list2)))) )
+  )[A[55G[27G[1@) > [K
+[K[A> > (append (cdr (cdr list1) (cdr (cdr (cdr (list2)))) )
+  )  [K [K[A[55G[27G[1@)  (cdr (cdr (cdr (list2)))) ))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(a b c d e)
+; [,bt for context]
+; readline-input:159:53: read-syntax: unexpected `)` [,bt for context]
+> (define (length [18G-calc x1 y1 x2 y2)([36G[K (sqrt ()_[45G[K ))[44G+) ))[45G ) ))[47G) ))[47G_) ))[47G) ))[K[47G ))[K[46G() ))[48G) ))[48G ) ))[49G() ))[51G) ))[51G ) ))[47G[1@e)[48G[1@x)[49G[1@p)[50G[1@t)[51G[1@()[53G[1@) [53G[1@2)[53G[P)[53G[1@ )[54G[1@2)) ([58G[1@e)[59G[1@x)[60G[1@p)[61G[1@t)[62G[1@ )[63G[1@()[65G[1@) [65G[1@ )[66G[1@2)([52G[1@-)[53G[1@ )[54G[1@x)[55G[1@1)[56G[1@ )[57G[1@x)[58G[1@2)) 2) (expt ([71G[1@-)[72G[1@y)[73G[1@1)[74G[1@ )[75G[1@y)[76G[1@2)
+> (ca> (c[K> ([Kleb[6G[Kngth [10G-calc 1 1 1 1)
+; -y1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (length-calc 1 1 1 1)[23G[K[22G[K[21G[20G[K[19G[18G[K[17G[16G[K7 4 10 8)
+; -y1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (length-calc 7 4 10 8)[24G[K[23G[K[22G[21G[K[20G[K[19G[18G[K[17G[16G[K1 2 3 4)
+; -y1: undefined;
+;  cannot reference an identifier before its definition
+;   in module: top-level
+; [,bt for context]
+> > (length-calc 1 2 3 4)[16G7 4 10 8)[16G1 1 1 1)[K> ([8@define ([24Gx1 y1 x2 y2) (sqrt (+ (expt(- x1 x2) 2) (expt (-y1 y2) 2) ) ))-[72G[1@ y
+> > (define (length-calc x1 y1 x2 y2) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))> ([8P[16G1 2 3 4)[K
+2.8284271247461903
+> > (length-calc 1 2 3 4)> ([8@define ([24Gx1 y1 x2 y2) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))[34G[P)[33G[P)[32G[P)[31G[P)[30G[P)[29G[P)
+> > (define (length-calc x1 y1) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))> ([8P[16G1 2 3 4)[K[23G[K[22G[K[21G[20G[K[19G[18G[K> ([8@define ([24Gx1 y1 x2 y2) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))> ([8P[16G1 2 3 4)[K> ([8@define ([24Gx1 y1 x2 y2) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))[23G[1@( [23G[P [24G[1@ x[24G[1@(  [25G[Pxx1 y1[30G[1@) [32G[1@ x[32G[1@( [33G[Pxx2 y[37G[1@)2[37G[P22[39G[1@) 
+> (length-calc ( 1 2)[21G[K[20G[K[19G[18G[K[17G[16G[K(1 2) ( 2 4))
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (length-calc (1 2) ( 2 4)) 2) ([23G[P2
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (length-calc (1 2) (2 4))[23G[1@ 2 4))[23G[P2 4))> [K> (length-calc (1 2) (2 4))[23G[1@ 2 4))> ([8@define ([25Gx1 y1) (x2 y2)) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))[24G[1@'((x1 y1) [33G[1@'(
+; readline-input:170:30: define: duplicate argument identifier
+;   at: quote
+;   in: (define (length-calc (quote (x1 y1)) (quote (x2 y2))) (sqrt (+ (expt (-
+;     x1 x2) 2) (expt (- y1 y2) 2))))
+; [,bt for context]
+> > (define (length-calc '(x1 y1) '(x2 y2)) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))> ([8P[16G(1 2) (2 4))[K
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (length-calc (1 2) (2 4))> ([8@define ([24G'(x1 y1) '(x2 y2)) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))> ([8P[16G(1 2) ( 2 4))[K> ([8@define ([25Gx1 y1) (x2 y2)) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))[24G[1@'((x1 y1) [33G[1@'((x2 y2)) (sqrt (+ (expt([39G[P)[38G[P)[37G[P)[36G[P)[35G[P)[34G[P)[33G[P)[32G[P)[33G[P [30G[P)[29G[P)[28G[P)[27G[P)[26G[P)[25G[P)[24G[P)[23G[P)[23G[1@ )[24G[1@l)[25G[1@i)[26G[1@s)[27G[1@t)[28G[1@1)[29G[1@ )[30G[1@l)[31G[1@i)[32G[1@s)[33G[1@t)[34G[1@2))) (sqrt (+ (expt(- x11[56G[P [55G[P [55G[1@( [56G[1@c [57G[1@a [58G[1@r [60G[1@ x[60G[1@l [61G[1@i [62G[1@s [63G[1@t [64G[1@1 [65G[1@)  [67G[1@ xx2[68G[P2[67G[P2[66G[P2[66G[1@ 2[67G[1@(2[68G[1@c2[69G[1@a2[70G[1@r2[70G[P2[69G[P2[69G[1@a2[70G[1@r2[71G[1@ 2[72G[1@l2[73G[1@i2[74G[1@s2[75G[1@t22) [78G[1@) ) 2) (expt (- y[92G[P1[91G[P1[91G[1@ 1[92G[P [92G[1@( [93G[1@c [94G[1@a [95G[1@r [97G[1@ y[97G[1@( [98G[1@c [99G[1@a [100G[1@r [102G[1@ y[102G[1@l [103G[1@i [104G[1@s [105G[1@t [106G[1@1 [107G[1@) [108G[1@) [110G[1@ y y[111G[P2[110G[P2[110G[1@(22[110G[P2[110G[P)[110G[1@()[111G[1@c)[112G[1@a)[113G[1@r)[114G[1@ )[115G[1@()[116G[1@c)[117G[1@a)[118G[1@r)[119G[1@ )[120G[1@l)[121G[1@i)[122G[1@s)[123G[1@t)[124G[1@2)[126G[1@) [127G[1@) 
+; readline-input:172:0: define: bad syntax (no expressions for procedure body)
+;   in: (define (length-calc list1 list2))
+; [,bt for context]
+; -: contract violation
+;   expected: number?
+;   given: 'a
+;   argument position: 2nd
+; [,bt for context]
+; readline-input:172:132: read-syntax: unexpected `)` [,bt for context]
+> > (define (length-calc list1 list2)) (sqrt (+ (expt(- (car list1) (car list2)) 2) (expt (- (car (car list1)) (car (car list2))) 2) ) ))ca[99G[Pr[98G[Pr[98G[1@dr[100G[1@r [100G[P [98G[Pr[98G[1@cr[99G[1@dr[101G[1@r [101G[P r list1)) (car (car[118G[P [117G[P [117G[1@d [118G[1@r 
+; readline-input:173:0: define: bad syntax (no expressions for procedure body)
+;   in: (define (length-calc list1 list2))
+; [,bt for context]
+; -: contract violation
+;   expected: number?
+;   given: 'a
+;   argument position: 2nd
+; [,bt for context]
+; readline-input:173:132: read-syntax: unexpected `)` [,bt for context]
+> > (define (length-calc list1 list2)) (sqrt (+ (expt(- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) ))
+; readline-input:174:0: define: bad syntax (no expressions for procedure body)
+;   in: (define (length-calc list1 list2))
+; [,bt for context]
+; -: contract violation
+;   expected: number?
+;   given: 'a
+;   argument position: 2nd
+; [,bt for context]
+; readline-input:174:132: read-syntax: unexpected `)` [,bt for context]
+> (define (length-calc list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) )
+  
+  )
+> (l> (define (length-calc list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) )
+  )[A[36G[1@)[52G(- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) ))
+[K[A[136G[99Gar list1)) (car (ca[136G> ([8P[16G(1 2) (2 4))[K> ([8@define ([24G'(x1 y1) '(x2 y2)) (sqrt (+ (expt(- x1 x2) 2) (expt (- y1 y2) 2) ) ))> ([8P[16G(1 2) (2 4))[K [16G[1@'((1 2) [23G[1@'(
+2.23606797749979
+> > (length-calc '(1 2) '(2 4))([18G[1@711[18G[P1[18G[1@71[19G[P  [20G[1@42[20G[P22) '([25G[1@12[26G[1@02[27G 4))[K [28G))[K[28G8))
+6.708203932499369
+> > (length-calc '(7 2) '(10 8))[18G1 2) '(2 4))[K> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) )
+  )  [K [K[A[135G)
+> > (define (length-calc list1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) ))> ([8P[16G'(7 2) '(10 8))[K
+6.708203932499369
+> > (length-calc '(7 2) '(10 8))[20G[1@42[21G[P)
+5
+> (> (length-calc '(7 4) '(10 8))[20G2[31G> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) ))> ([8P[16G'(1 2) '(2 4))[K> ([8@define ([24Glist1 list2) (sqrt (+ (expt (- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) )
+  )[A[36G[1@)[52G(- (car list1) (car list2)) 2) (expt (- (car (cdr list1)) (car (cdr list2))) 2) ) ))
+[K[A[136G[99Gar list1)) (car (ca[136G> ([8P[16G(1 2) (2 4))[K
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (length-calc (1 2) (2 4))[16G'(7 4) '(10 8))[20G2[31G[20G4[31G
+5
+> (define list [15G3 ([17G[K1[17G[K(1 2 [21G)
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> > (define list3 (1 2)
+  )[A[22G[17G1 2)[K> [K
+[K[A> (define list3 1 2)
+; readline-input:187:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define list3 1 2)
+; [,bt for context]
+> > (define list3 1 2)[17G(1 2)1 2[22G)[17G[1@'(
+> (car (Car[11G[K[10G[K[9G[Kcar (list3))
+  )
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(1 2)
+; [,bt for context]
+> > (car (car (list3))
+  )  [K [K[A[21G)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: '(1 2)
+; [,bt for context]
+> (car list4[12G[K3)
+1
+> (car [7G[6G[K> (c[K> ([K> [K
+  
+  (1)
+; application: not a procedure;
+;  expected a procedure that can be applied to arguments
+;   given: 1
+; [,bt for context]
+> (define (mult args)
+    (if (null? args)
+        1
+        (* (car args) (mult (cdr args)))))
+> (mult 1[9G[K'(1 2 3 4 5))
+120
+> > (mult '(1 2 3 4 5))[18G5))[K[17G5))[K[16G5))[K[15G5))[K[14G5))[K[13G5))[K[12G5))[K[11G5))[K[11G))[K
+1
+> > (mult '())[11G2))
+2
+> > > (mult '(2))[11G))[K[11G1 2 3 4 5))> ([8@define ([17Gargs)[K
+    (if (null? args)
+        1
+        (* (car args) (mult (cdr args)))))[10G[1@+*[11G[P [3A> (1)[K
+[K
+[K
+[K[3A[6G> (define (mult args)
+    (if (null? args)
+        1
+        (* (car args) (mult (cdr args)))))[10G[P [10G[1@+ [A[10G       [9G01[10G[K[2A> ([8P[9G'(1 2 3 4 5))
+[K
+[K
+[K[3A[22G> ([8@define ([17Gargs)[K
+    (if (null? args)
+        1
+        (* (car args) (mult (cdr args)))))t[27G[P [26G[P [25G[P [24G[P [24G[1@s [25G[1@u [26G[1@m [10G[1@+*[11G[P [A[10G    [9G01[10G[K[A[21G[A[22G(mult[15G[P [14G[P [13G[P [12G[P [12G[1@s [13G[1@u [14G[1@m [3B
+> (sum (1[9G[K[8G[K'(1 3[12G[K@)[13G[K[12G[K2))
+3
+> > (sum '(1 2))[12G32))
+33
+> > (sum '(1 32))[14G ))[15G3))[16G3))
+66
+> (sum '(1 2 3 4 5))
+15
+> (define i[11G[Kzip ('[16G[K[15G[K'(list1) ;[24G[K'(list2))
+; readline-input:211:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define zip (quote (list1)) (quote (list2)))
+; [,bt for context]
+> > (define zip '(list1) '(list2))[32G[K(list1) '(list2)[31G[K[30G[K[29G[K[28G[K[27G[K[26G[K[25G[K[24G[K[23G[22G[K[21G[K[20G[K[19G[K[18G[K[17G[K[16G[K[15G[Klist1 list2)[11G[1@(zzip list1 list2))[28G[K(if[30G[K[29G[K[28G[K> [K> (define zip '(list1) '(list2))
+; readline-input:212:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define zip (quote (list1)) (quote (list2)))
+; [,bt for context]
+> > (define zip '(list1) '(list2))(if (null? list1 list2) 0[57G[K[56G {})
+; readline-input:213:0: define: bad syntax (multiple expressions after
+;   identifier)
+;   in: (define zip (quote (list1)) (quote (list2)))
+; [,bt for context]
+; readline-input:213:30: if: missing an "else" expression
+;   in: (if (null? list1 list2) ())
+; [,bt for context]
+> > (define zip '(list1) '(list2))(if (null? list1 list2) {})[24G[P([24G[Pllist2[30G[P([22G[P [15G[P([14G[P([14G[Pl[14G[1@ l[11G[1@(zzip list1 list2[28G[1@)(
+; readline-input:214:0: define: bad syntax (no expressions for procedure body)
+;   in: (define (zip list1 list2))
+; [,bt for context]
+; readline-input:214:26: if: missing an "else" expression
+;   in: (if (null? list1 list2) ())
+; [,bt for context]
+> > (define (zip list1 list2))(if (null? list1 list2) {}))[55G[K[54G[K[53G[K[52G[51G[K[50G[K[49G[K[48G[K[47G[K[46G[K[45G[44G[K[43G[K[42G[K[41G[K[40G[K[39G[38G[K[37G[K[36G[K[35G[K[34G[K[33G[K[32G[31G[K[30G[K[29G[K[28G[K[27G[K) (if list[36G[K[35G[K[34G[K[33G[K(null? list1) null (append ([60G[K()[60G () [61G'()[60G'()[K '()[62Gc)[63Ga)[64Gr)[64G)[K[63G)[K[62G)[K[62G()[63Gc)[64Ga)[65Gr)[66G )[67Gl)[68Gi)[69Gs)[70Gt)[71G1)[73G)[73G )[74G()[76G)[75Gc))[76Ga))[77Gr))[78G ))[79Gl))[80Gi))[81Gs))[82Gt))[83G2))[86G)[86G[K)) (zip ( [60G[1@('end [60G[1@'(('((car list1) (car list2)) (zip (cdr list1) (cdr list2)))))
+  )
+> (zip '(1 2 3 4) '(a b c d))
+'('((car list1) (car list2)) (zip (cdr list1) (cdr list2)))
+> > (zip '(1 2 3 4) '(a b c d))> (define (zip list1 list2) (if (null? list1) null (append '('((car list1) (car list2)) (zip (cdr list1) (cdr list2)))))
+  )  [K [K[A[121G[88G[1@) ) (zip (cdr list1) (cdr list2)))))
+> > (define (zip list1 list2) (if (null? list1) null (append '('((car list1) (car list2))) (zip (cdr list1) (cdr list2)))))> (zip '(1 2 3 4) '(a b c d))[K
+'('((car list1) (car list2))
+  '((car list1) (car list2))
+  '((car list1) (car list2))
+  '((car list1) (car list2)))
+> > (zip '(1 2 3 4) '(a b c d))> (define (zip list1 list2) (if (null? list1) null (append '('((car list1) (car list2))) (zip (cdr list1) (cdr list2)))))'[60G[P(([61G[P([62G[Pc((car list1) (car list2))[85G[P nd ([61G[1@a([62G[1@p([63G[1@p([64G[1@e([65G[1@n([66G[1@d([67G[1@ (
+> > (define (zip list1 list2) (if (null? list1) null (append (append (car list1) (car list2)) (zip (cdr list1) (cdr list2)))))> (zip '(1 2 3 4) '(a b c d))[K
+; append: contract violation
+;   expected: list?
+;   given: 1
+; [,bt for context]
+> > (zip '(1 2 3 4) '(a b c d))> (define (zip list1 list2) (if (null? list1) null (append (append (car list1) (car list2)) (zip (cdr list1) (cdr list2))))) ([68G[1@ ([68G[1@( [69G[1@a [70G[1@p [71G[1@p [72G[1@e [73G[1@n [74G[1@d  (car list1) (car list2))[100G[1@) [100G[P 
+  )
+> > (define (zip list1 list2) (if (null? list1) null (append (append (append (car list1) (car list2)) (zip (cdr list1) (cdr list2)))))
+  )[A> (zip '(1 2 3 4) '(a b c d))[K
+[K[A[30G
+; append: contract violation
+;   expected: list?
+;   given: 1
+; [,bt for context]
+> > (zip '(1 2 3 4) '(a b c d))> (define (zip list1 list2) (if (null? list1) null (append (append (append (car list1) (car list2)) (zip (cdr list1) (cdr list2)))))
+  )  [K [K[A[133G)[133G[K> (zip '(1 2 3 4) '(a b c d))[K
+; append: contract violation
+;   expected: list?
+;   given: 1
+; [,bt for context]
+> > (zip '(1 2 3 4) '(a b c d))> (define (zip list1 list2) (if (null? list1) null (append (append (append (car list1) (car list2)) (zip (cdr list1) (cdr list2)))))
+  )  [K [A[69G[8Pc
+[K[A[125G([69G[1@lc[70G[1@ic[71G[1@sc[72G[1@tc[73G[1@ c[74G[1@(ccar list1) [86G[1@)([86G[P([85G[P([85G[1@)([86G[1@ ((car list2)[99G[1@) 
+; readline-input:226:26: if: bad syntax
+;   in: (if (null? list1) null (append (append (list (car list1)) (car list2)))
+;     (zip (cdr list1) (cdr list2)))
+; [,bt for context]
+; readline-input:226:129: read-syntax: unexpected `)` [,bt for context]
+> > (define (zip list1 list2) (if (null? list1) null (append (append (list (car list1)) (car list2))) (zip (cdr list1) (cdr list2)))))
+; readline-input:227:26: if: bad syntax
+;   in: (if (null? list1) null (append (append (list (car list1)) (car list2)))
+;     (zip (cdr list1) (cdr list2)))
+; [,bt for context]
+; readline-input:227:129: read-syntax: unexpected `)` [,bt for context]
+> (define (zip list1 list2) (if (null? list1) null (append (list (list (car list1) (car list2))) (zip (cdr list1) (cdr list2)))))
+> 
+  )
+; readline-input:230:0: read-syntax: unexpected `)` [,bt for context]
+> > )> (define (zip list1 list2) (if (null? list1) null (append (list (list (car list1) (car list2))) (zip (cdr list1) (cdr list2)))))[61G[8@append ([75G[5Pcar list1)[133G> (zip '(1 2 3 4) '(a b c d))[K
+'((1 a) (2 b) (3 c) (4 d))
+> > (zip '(1 2 3 4) '(a b c d))> )[K> (define (zip list1 list2) (if (null? list1) null (append (list (list (car list1) (car list2))) (zip (cdr list1) (cdr list2)))))
+> > (define (zip list1 list2) (if (null? list1) null (append (list (list (car list1) (car list2))) (zip (cdr list1) (cdr list2)))))> (zip '(1 2 3 4) '(a b c d))[K
+'((1 a) (2 b) (3 c) (4 d))
+> ; user break [,bt for context]
+
+pparmar2@remote04:/import/linux/home1/pparmar2/i471b/work/lab2$ exit
+
+Script done on 2021-03-04 14:50:33-05:00 [COMMAND_EXIT_CODE="0"]

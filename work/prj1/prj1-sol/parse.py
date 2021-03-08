@@ -44,10 +44,21 @@ def parse(text):
     
         return t
 
+    def expr():
+        t = term()
+        while (check('==') or (check('<=')) or (check('<')) or (check('>')) or (check('!=')) or (check('>='))):
+            kind = lookahead.kind
+            match(kind)
+            t1 = term()
+            t = Ast(kind, t, t1)
+    
+        return t
+        
     def term():
         if (check('-')):
             match('-')
-            return Ast('-', term())
+            #return Ast('-', term())
+            #return Ast(term(), '-')
         else:
             f = factor()
             return f

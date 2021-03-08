@@ -1,0 +1,66 @@
+[
+   {
+      "lexeme" : "def",
+      "kind" : "DEF"
+   },
+   {
+      "kind" : "ID",
+      "lexeme" : "sum"
+   },
+   {
+      "lexeme" : "(",
+      "kind" : "("
+   },
+   {
+      "kind" : "ID",
+      "lexeme" : "a"
+   },
+   {
+      "lexeme" : ",",
+      "kind" : ","
+   },
+   {
+      "lexeme" : "b",
+      "kind" : "ID"
+   },
+   {
+      "lexeme" : ")",
+      "kind" : ")"
+   },
+   {
+      "lexeme" : "a",
+      "kind" : "ID"
+   },
+   {
+      "lexeme" : "+",
+      "kind" : "+"
+   },
+   {
+      "kind" : "ID",
+      "lexeme" : "f"
+   },
+   {
+      "kind" : "(",
+      "lexeme" : "("
+   },
+   {
+      "lexeme" : "a",
+      "kind" : "ID"
+   },
+   {
+      "lexeme" : ",",
+      "kind" : ","
+   },
+   {
+      "kind" : "ID",
+      "lexeme" : "b"
+   },
+   {
+      "kind" : ")",
+      "lexeme" : ")"
+   },
+   {
+      "kind" : "<EOF>",
+      "lexeme" : "<EOF>"
+   }
+]

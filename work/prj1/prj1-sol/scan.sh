@@ -1,3 +1,3 @@
 #!/bin/sh
+./lexer.py
 
-echo 'needs to be set up'

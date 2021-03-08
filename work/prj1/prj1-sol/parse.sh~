@@ -1,3 +1,3 @@
 #!/bin/sh
 ./parse.py | json_pp
-
+echo 'needs to be set up'

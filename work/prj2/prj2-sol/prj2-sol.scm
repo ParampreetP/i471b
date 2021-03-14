@@ -45,7 +45,10 @@
 ;;Return the list resulting by multiplying each element of `list` by `x`.
 ;;Cannot use recursion, can use one or more of `map`, `foldl`, or `foldr`.
 (define (mul-list-2 list x)
-  '())  ;TODO
+	(map (lambda (n)
+		(* n x))
+			list)
+)
 
 ;;Given a proper-list list of proper-lists, return the sum of the
 ;;lengths of all the contained lists.  Cannot use recursion, can use

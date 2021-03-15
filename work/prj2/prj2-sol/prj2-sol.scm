@@ -4,12 +4,28 @@
 
 ;;Return the list resulting by multiplying each element of `list` by `x`.
 (define (mul-list list x)
-  '())  ;TODO
+	(if (null? list)
+	  '()
+	(cons
+	  (* x (car list)) (mul-list (cdr list) x))
+	)
+)
 
 ;;Given a proper-list list of proper-lists, return the sum of the
 ;;lengths of all the top-level contained lists.
 (define (sum-lengths list)
-  '())  ;TODO
+  (cond
+((null? list)
+    0)
+((pair? (car list))
+    (+(sum-lengths (car list)) (sum-lengths(cdr list))))
+((list? (car list))
+    (+(sum-lengths (car list)) (sum-lengths(cdr list))))
+(else
+    (+ (car list) (sum-lengths (cdr list))))))
+
+;todo... does not work with test cases like (sum-lengths '( (1 2 3) (()) (() 2 (3 4 5)))).. multi list.. maybe a list? case
+
 
 ;;Evaluate polynomial with list of coefficients coeffs (highest-order
 ;;first) at x.  The computation should reflect the traditional
@@ -54,6 +70,8 @@
 ;;lengths of all the contained lists.  Cannot use recursion, can use
 ;;one or more of `map`, `foldl`, or `foldr`.
 (define (sum-lengths-2 list)
-  '())  ;TODO
+  	(foldl (lambda (a b) (+ a b)) 0 list))
+
+; does not work first test case example
 
 		     

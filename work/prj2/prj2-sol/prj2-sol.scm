@@ -24,14 +24,20 @@
 (else
     (+ (car list) (sum-lengths (cdr list))))))
 
-;todo... does not work with test cases like (sum-lengths '( (1 2 3) (()) (() 2 (3 4 5)))).. multi list.. maybe a list? case
+;todo... wrong output for test cases like (sum-lengths '( (1 2 3) (()) (() 2 (3 4 5))))
 
 
 ;;Evaluate polynomial with list of coefficients coeffs (highest-order
 ;;first) at x.  The computation should reflect the traditional
 ;;representation of the polynomial.
 (define (poly-eval coeffs x)
-  '())  ;TODO
+	(if (null? coeffs)
+	0
+	(+ (expt (car coeffs) x) (poly-eval (cdr coeffs) x))
+	)
+   
+)
+;todo...does not work with 2nd test case
 
 ;;Evaluate polynomial with list of coefficients coeffs (highest-order
 ;;first) at x using Horner's method.
@@ -39,8 +45,15 @@
   '())  ;TODO
 
 ;;Return count of occurrences equal? to x in exp
-(define (count-occurrences exp x)
-  '())  ;TODO
+
+(define count-occurrences (lambda(ls x)
+                            (cond
+                              [(null? ls) 0]
+                              [(list? (car ls)) (+ (count-occurrences (car ls) x) (count-occurrences (cdr ls) x))]
+                              [(equal? x (car ls)) (+ 1 (count-occurrences (cdr ls) x))]
+                              (else (count-occurrences (cdr ls) x))
+                              )))
+;doesnt work with test case (count-occurrences '( (+ 1 2) (a (+ 1 2) 3) ) '(+ 1 2))
 
 ;;Return result of evaluating arith expression over Scheme numbers
 ;;with fully parenthesized prefix binary operators 'add, 'sub, 'mul

@@ -34,7 +34,14 @@
 ;;Evaluate polynomial with list of coefficients coeffs (highest-order
 ;;first) at x using Horner's method.
 (define (poly-eval-horner coeffs x)
-  '())  ;TODO
+  (if (null? coeffs)
+	0
+  (letrec ([eval (lambda (intialvalue list)
+                    (if (null? list)
+                      intialvalue
+                      (eval (+ (* intialvalue x) (car list)) (cdr list))))])
+    (eval (car coeffs) (cdr coeffs))))
+)
 
 ;;Return count of occurrences equal? to x in exp
 (define (count-occurrences exp x)

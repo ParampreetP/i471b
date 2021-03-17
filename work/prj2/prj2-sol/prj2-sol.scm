@@ -58,17 +58,38 @@
 ;;with fully parenthesized prefix binary operators 'add, 'sub, 'mul
 ;;and 'div.
 (define (arith-eval exp)
-  '())  ;TODO
+ (if (number? exp)
+      exp
+      (let ([op (car exp)]
+	    [left (arith-eval (cadr exp))]
+	    [right (arith-eval (caddr exp))])
+	(cond [(equal? 'add op) (+ left right)]
+	      [(equal? 'sub op) (- left right)]
+	      [(equal? 'mul op) (* left right)]
+	      [(equal? 'div op) (/ left right)]))))
 
 ;;Given a proper-list list of proper-lists, return sum of lengths of
 ;;all the contained lists.  Must be tail-recursive.
 (define (sum-lengths-tr list)
-  '())  ;TODO
+ (letrec ([tail-sum (lambda (ls intialvalue)
+    (if (null? ls)
+      intialvalue
+      (tail-sum (cdr ls) (+ intialvalue (length (car ls))))
+    )
+    )])
+  (tail-sum list 0)
+))
 
 ;;Evaluate polynomial with list of coefficients coeffs (highest-order
 ;;first) at x.  Must be tail-recursive.
 (define (poly-eval-horner-tr coeffs x)
-  '())  ;TODO
+  (letrec ([tail-poly (lambda (polyls intialvalue)
+    (if (null? polyls)
+      intialvalue
+      (tail-poly (cdr polyls) (+ intialvalue (* (car polyls) (expt x (- (length polyls) 1)))))
+    ))])
+    (tail-poly coeffs 0)
+  ))
 
 ;;Return the list resulting by multiplying each element of `list` by `x`.
 ;;Cannot use recursion, can use one or more of `map`, `foldl`, or `foldr`.

@@ -1,0 +1,587 @@
+Script started on 2021-03-25 13:19:22-04:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="80" LINES="24"]
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ cat [K[K[K[Ktouch la [Kb4-sol .pro
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- f(x,a)(x,a) = f(b,Y)(b,Y)
+.
+
+no
+| ?- . .f(x,a) = f(b,Y).Xx,a) = f(b,Y).x,a) = f(b,Y). ,a) = f(b,Y).
+
+X = b
+Y = a
+
+yes
+| ?- f(X,a) = f(b,Y).Yb,Y).b,Y). ,bY).Y). bY).Y). ).
+
+no
+| ?- f(X,a) = f(Y,b).ab).b). ).
+
+Y = X
+
+yes
+| ?- f(X, Y) = f(a, a), g(X, Y) = g(a, b).
+
+no
+| ?- f(X, Y) = f(a, a), g(X, Y) = g(a, b).f(X,a) = f(Y,a).                     aY,a).Y,a). ,a).
+
+X = a
+
+yes
+| ?- f(X,a) = f(a,a).ya) = f(a,a).a) = f(a,a). Ya) = f(a,a).a) = f(a,a). ) = f(a,a).
+
+X = a
+Y = a
+
+yes
+| ?- add()()(X),) )) y)) Y),) )X)) ) Z)):= - Z is  is z X+Y
+.
+uncaught exception: error(existence_error(procedure,(:-)/2),top_level/0)
+| ?- ['lab4-sol.pro'].
+compiling /import/linux/home1/pparmar2/i471b/work/lab4/lab4-sol.pro for byte code...
+/import/linux/home1/pparmar2/i471b/work/lab4/lab4-sol.pro:1: warning: singleton variables [X,Y] for (=)/2
+/import/linux/home1/pparmar2/i471b/work/lab4/lab4-sol.pro compiled, 2 lines read - 697 bytes written, 7 ms
+error: /import/linux/home1/pparmar2/i471b/work/lab4/lab4-sol.pro:1: native code procedure (=)/2 cannot be redefined (ignored)
+
+yes
+| ?- 
+
+(exit)(exit)
+
+
+Prolog interruption (h for help) ? h
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? 
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologtouch lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- f(1,, 2,z z)(1,2,z) = f(_,_, X)(_,_, X)
+.
+
+X = z
+
+yes
+| ?- .f(1,2,z) = f(_,_, X).
+
+X = z
+
+yes
+| ?- e
+
+e
+
+Prolog interruption (h for help) ? h
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? 
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro
+
+(gedit:1741382): Gtk-[1;33mWARNING[0m **: [34m13:29:28.065[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- head(a, tail(z, B   B)(z, B), Y)(a, tail(z, B), Y).
+uncaught exception: error(existence_error(procedure,head/3),top_level/0)
+| ?- head(a, tail(z, B), Y).  - = ( head(a, tail(z, B_a, tail(z, Ba, tail(z, B , tail(z, _BB )(z, _), _)(_, tail(z, _), _)
+.
+
+yes
+| ?- .head(a, tail(z, B), Y) = head(_, tail(z, _), _).Xz, _), _).z, _), _). , _), _).
+
+X = z
+
+yes
+| ?- 
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologgedit lab4-sol.pro
+
+(gedit:1741742): Gtk-[1;33mWARNING[0m **: [34m13:30:56.603[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ clear
+[H[2J[3Jpparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ cleargedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- cons(a, cons(b, cons(c, z))).  = cons(_,      ons(_, cons(b _, cons)(_, cons) (_, X)(_, X))(_, cons(_, X)))(_, cons(_, cons(_, X))).
+
+X = z
+
+yes
+| ?- e
+h
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prolog[1Pcleargedit lab4-sol.pro
+
+(gedit:1742100): Gtk-[1;33mWARNING[0m **: [34m13:32:24.930[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- [a | b_ }.
+uncaught exception: error(syntax_error('user_input:1 (char:7) ] or operator expected in list'),read_term/3)
+| ?- [a | b}.  ][a | b].
+uncaught exception: error(type_error(list,b),consult/1)
+| ?- [a | b].| b]. , b]. b].  b]. , b]. b].
+uncaught exception: error(existence_error(source_sink,'a.pl'),consult/1)
+| ?- [a, b].     |b} ][a|b]./ 
+uncaught exception: error(type_error(list,b),consult/1)
+| ?- [a,b][a,b].
+uncaught exception: error(existence_error(source_sink,'a.pl'),consult/1)
+| ?- [a,b].      [X|Y} ][X|Y] =[a,b][a,b].
+
+X = a
+Y = [b]
+
+yes
+| ?- [X|Y] =[a,b].|,b].,b]. b].
+
+X = a
+Y = b
+
+yes
+| ?- [X|Y] =[a|b].[b].]b].[]b]. b]].]].
+
+X = a
+Y = [b]
+
+yes
+| ?- [X|Y] =[a|[b]].|[b|]].c]].]].
+
+X = a
+Y = [b|c]
+
+yes
+| ?- [X|Y] =[a|[b|c]].Aa|[b|c]].a|[b|c]]. |[Bb|c]].b|c]]. |Cc]].c]]. ]].
+
+X = A
+Y = [B|C]
+
+yes
+| ?- [`,  1,2,3,4][1,2,3,4]         H
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ racket
+Welcome to Racket v7.9 [bc].
+> (cddr '(1,2,3,4))
+'(,3 ,4)
+> > (cddr '(1,2,3,4))[15G[1@ 3[13G[1@ 22, 3,[19G 4))
+'(,3 ,4)
+> > (cddr '(1, 2, 3, 4))[9G[P(([10G[1@L1[11G[1@I1[12G[1@S1[13G[1@T1[13G[P1[12G[P1[11G[P1[11G[1@l1[11G[P1[10G[P1[10G[1@l1[11G[1@i1[12G[1@s1[13G[1@t1[14G[1@ 1
+; readline-input:3:13: unquote: not in quasiquote
+;   in: (unquote 2)
+; [,bt for context]
+> > (cddr (list 1, 2, 3, 4))[9G[4P'([23G[13G2,3,4))[K
+'(,3 ,4)
+> exit
+#<procedure:exit>
+> (exit)
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ racketprologgedit lab4-sol.pro
+
+(gedit:1743705): Gtk-[1;33mWARNING[0m **: [34m13:38:53.318[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pracket
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprologracket
+Welcome to Racket v7.9 [bc].
+> > (exit)> [Pexit[K> (cddr '(1,2,3,4))> (c[1@ad
+',3
+> > (caddr '(1,2,3,4))> (exit)[K> (caddr '(1,2,3,4))[7G[Pr
+',2
+> > (cadr '(1,2,3,4))[7G[1@dr[21G[7G[Pr[20G> (c[Pdd[6G[1@ar
+; cdar: contract violation
+;   expected: (cons/c pair? any/c)
+;   given: '(1 ,2 ,3 ,4)
+; [,bt for context]
+> > (cdar '(1,2,3,4))[11G[1@[11,2[14G[1@]2[14G[P22[15G[1@],
+'(,2)
+> > (cdar '([1,2],3,4))[11G[2P1,2[20G> (cad[20G[7G[1@dr[21G> (exit)[K
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ racketgedit lab4-sol.pro
+
+(gedit:1743991): Gtk-[1;33mWARNING[0m **: [34m13:39:59.999[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+^C
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro
+
+(gedit:1744114): Gtk-[1;33mWARNING[0m **: [34m13:40:31.627[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- 9 [1,2,3,4][1,2,3,4] = [__ , _, X|Y][_, _, X|Y]
+.
+
+X = 3
+Y = [4]
+
+yes
+| ?- .[1,2,3,4] = [_, _, X|Y]Y] ]  , Y\ ][_, _, X, Y]
+.
+
+X = 3
+Y = 4
+
+yes
+| ?- .[1,2,3,4] = [_, _, X, Y].                       [1,2,3,4] = [_, _, X|Y].                      [1,2,3,4] = [_, _, X, Y].                        
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologgedit lab4-sol.pro
+^[[A^[[Bpparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- dasda     [1, 2 ,3   , 3 ,  , 4][1, 2, 3, 4] =                length(1,   [1,2,3,4][1,2,3,4]
+.
+uncaught exception: error(syntax_error('user_input:1 (char:7) . or operator expected after expression'),read_term/3)
+| ?- A=  length([1,2,, 3,4) ][1,2,3,4])([1,2,3,4])
+.
+uncaught exception: error(existence_error(procedure,length/1),top_level/0)
+| ?- .length([1,2,3,4]) , 4)([1,2,3,4], 4).
+
+yes
+| ?- length([1,2,3,4], 4).34).4). ).
+
+no
+| ?- length([1,2,3,4], 3).                     length([list      (list, l length([1,2,3,4], 3).length([1,2,3,4], 4).length([1,2,3,4], 3).3). L).). l).e).n).g).t).h).).
+
+no
+| ?- length([1,2,3,4], length).length). Length).ength).
+
+Length = 4
+
+yes
+| ?- length([1,2,3,4], Length).. . . . . . . . [) _,_X,Y][_,_X,Y])([1,2,3,4], [_,_X,Y]).
+
+no
+| ?- length([1,2,3,4], [_,_X,Y]).          4)([1,2,3,4], 4).
+
+yes
+| ?- member(X, [X|R][X|R])(X, [X|R]).
+
+true ? 
+
+yes
+| ?- member(       restmember()()R),) )[)])[]X])|])R])]).
+uncaught exception: error(existence_error(procedure,restmember/2),top_level/0)
+| ?- member(X,[1,2,3,4][1,2,3,4])(X,[1,2,3,4]).
+
+X = 1 ? 
+
+yes
+| ?- member(X,[1,2,3,4]).restmember(R, [X|R]).member(X, [X|R]).    r(X, [X|R]). r(X, [X|R]). r(X, [X|R]). r(X, [X|R]). r(X, [X|R]). cr(X, [X|R]).dr(X, [X|R]).dr(X, [X|R]).rr(X, [X|R]).r(X, [X|R]). r(X, [X|R]). r(X, [X|R]). r(X, [X|R]). cr(X, [X|R]).ar(X, [X|R]).dr(X, [X|R]).r(X, [X|R]). rr(X, [X|R]).r(X, [X|R]). r(X, [X|R]).
+uncaught exception: error(existence_error(procedure,car/2),top_level/0)
+| ?- car(X, [X|R]).
+uncaught exception: error(existence_error(procedure,car/2),top_level/0)
+| ?- car(X. , [1,2,3][1,2,3])(X, [1,2,3])/ .
+uncaught exception: error(existence_error(procedure,car/2),top_level/0)
+| ?- car(X, [1,2,3]).car(X, [X|R]).  member(X,[1,2,3,4]).
+
+X = 1 ? 
+
+yes
+| ?- member(X,[1,2,3,4]).car(X, [1,2,3]).    car(X, [X|R]).  
+uncaught exception: error(existence_error(procedure,car/2),top_level/0)
+| ?- 
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologgedit lab4-sol.pro
+
+(gedit:1747501): Gtk-[1;33mWARNING[0m **: [34m13:54:35.022[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- car   member(X, [X|R]).
+
+true ? 
+Action (; for next solution, a for all solutions, RET to stop) ? 
+Action (; for next solution, a for all solutions, RET to stop) ? R
+Action (; for next solution, a for all solutions, RET to stop) ? E
+Action (; for next solution, a for all solutions, RET to stop) ? T
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+(1 ms) yes
+| ?- 
+member(X, [X|R]).
+
+true ? 
+
+yes
+| ?- member(X, [X|R]).                 CDDR    cddr(X X|R,      [X,R         cddr(     member( (X, [[1,2][1,2],2).
+uncaught exception: error(syntax_error('user_input:4 (char:20) , | ] or operator expected in list'),read_term/3)
+| ?- member(X, [[1,2],2).
+uncaught exception: error(syntax_error('user_input:5 (char:19) , | ] or operator expected in list'),read_term/3)
+| ?- e
+h
+
+Prolog interruption (h for help) ? g
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ clear
+[H[2J[3Jpparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ clearprologgedit lab4-sol.pro
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cprolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- car[ (X, [X|R).
+uncaught exception: error(syntax_error('user_input:1 (char:12) ] or operator expected in list'),read_term/3)
+| ?- car(X, [X|R).]).[X|R]).
+uncaught exception: error(existence_error(procedure,car/2),top_level/0)
+| ?- car(X, [X|R]).r(X, [X|R]). r(X, [X|R]). mr(X, [X|R]).er(X, [X|R]).mr(X, [X|R]).br(X, [X|R]).er(X, [X|R]).rr(X, [X|R]).r(X, [X|R]). (X, [X|R]).
+
+true ? 
+
+(1 ms) yes
+| ?- memberr       cddr(X, [r,  R,X][R,X])(X, [R,X]).
+uncaught exception: error(existence_error(procedure,cddr/2),top_level/0)
+| ?- cddr(X, [R,X]).ddr(X, [R,X]). r(X, [R,X]). r(X, [R,X]). mr(X, [R,X]).er(X, [R,X]).mr(X, [R,X]).r(X, [R,X]). (X, [R,X]).
+uncaught exception: error(existence_error(procedure,mem/2),top_level/0)
+| ?- mem(X, [R,X]).R,X]). ,,X]). X/]).R]).]). ]). ]). R]).|]).x]).]). X]).]).
+uncaught exception: error(existence_error(procedure,mem/2),top_level/0)
+| ?- mem(X, [R|X]).XR|X]).R|X]). |X]). X]). X]). L]).E]).n]).]). ]). l]).e]).]). ]). ]). l]).e]).n]).g]).t]).h]).(]).X]).,]).R]).)]).(X,R)]).
+uncaught exception: error(existence_error(procedure,mem/2),top_level/0)
+| ?- mem(X, [length(X,R)]).mem(X, [R|X]).        |X]). X]). X ]).]). |]).[]).r]).]]).[r]]). ]). R]).]]).[R]]). ]]).[R]]).
+uncaught exception: error(existence_error(procedure,mem/2),top_level/0)
+| ?- mem(X, [X|[R]]). m(X, [X|[R]]).m(X, [X|[R]]). mb(X, [X|[R]]).e(X, [X|[R]]).r(X, [X|[R]]).(X, [X|[R]]).
+
+true ? 
+
+yes
+| ?- member(X, [1,2,3,4][1,2,3,4])(X, [1,2,3,4]).
+
+X = 1 ? 
+
+yes
+| ?- member(X, [1,2,3,4]).member(X, [X|[R]]).  BR]]).|R]]).XR]]).CR]]).R]]). R]]). CR]]).R]]). ]]).
+
+true ? 
+
+yes
+| ?- member(X, [X|[B|C]]).member(X, [1,2,3,4]).
+
+X = 1 ? 
+
+yes
+| ?- member(X, [1,2,3,4]).member(X, [X|[B|C]]).member(X, [1,2,3,4]).member(X, [X|[B|C]]).member(X, [1,2,3,4]).                     member(X, [1,2,3,4]).member(X, [X|[B|C]]).member(X, [1,2,3,4]).member(X, [X|[R]]).  mem(X, [X|[R]]).   mem(X, [length(X,R)]).mem(X, [R|X]).        mem(X, [R,X]).cddr(X, [R,X]).member(X, [X|R]).(R]).R)]).(R)]R)]). M)]).E)]).M)]).B)]).)]). )]). )]). )]). m)]).e)]).m)]).b)]).e)]).r)]).()]).X)]).,)]). )]).[)]).X)]).|)]).R)]).])]).[X|R])]).
+uncaught exception: error(syntax_error('user_input:13 (char:32) ) or operator expected'),read_term/3)
+| ?- member(X, [X|(member(X, [X|R])]).member(X, [1,2,3,4]).            member(X, [X|[B|C]]).member(X, [1,2,3,4]).member(X, [X|[R]]).  mem(X, [X|[R]]).   mem(X, [length(X,R)]).mem(X, [R|X]).        mem(X, [R,X]).cddr(X, [R,X]).member(X, [X|R]).
+
+true ? 
+
+yes
+| ?- member(X, [X|R]).  :- member(X, [X|R][X|R])(X, [X|R]).
+uncaught exception: error(existence_error(procedure,(:-)/2),top_level/0)
+| ?- member(X, [X|R]) :- member(X, [X|R]).member(X, [X|R]).                    member(X, [X|R]) :- member(X, [X|R]).            r(X,R)(X,R).
+uncaught exception: error(existence_error(procedure,(:-)/2),top_level/0)
+| ?- member(X, [X|R]) :- member(X,R).YX|R]) :- member(X,R).X|R]) :- member(X,R). yX|R]) :- member(X,R).X|R]) :- member(X,R). y|R]) :- member(X,R). Y|R]) :- member(X,R).|R]) :- member(X,R).
+uncaught exception: error(existence_error(procedure,(:-)/2),top_level/0)
+| ?- member(X, [Y|R]) :- member(X,R). :- member(X,R). :- member(X,R).
+uncaught exception: error(existence_error(procedure,(:-)/2),top_level/0)
+| ?- caddr) (X,[A,B,X}C][A,B,X}C]   , |C][A,B,X|C])(X,[A,B,X|C]).
+uncaught exception: error(existence_error(procedure,caddr/2),top_level/0)
+| ?- caddr(X,[A,B,X|C]).
+uncaught exception: error(existence_error(procedure,caddr/2),top_level/0)
+| ?- e
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologgedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- (me   caddr(X,p [A,B,C X|C][A,B,X|C])(X,[A,B,X|C]).
+uncaught exception: error(existence_error(procedure,caddr/2),top_level/0)
+| ?- caddr(X,[A,B,X|C]).r(X,[A,B,X|C]). r(X,[A,B,X|C]). r(X,[A,B,X|C]). r(X,[A,B,X|C]). mr(X,[A,B,X|C]).er(X,[A,B,X|C]).mr(X,[A,B,X|C]).br(X,[A,B,X|C]).er(X,[A,B,X|C]).rr(X,[A,B,X|C]).r(X,[A,B,X|C]). (X,[A,B,X|C]).
+
+X = A ? 
+
+yes
+| ?- member(X, [1,2,, 3,4][1,2,3,4]_.  )(X, [1,2,3,4]).
+
+X = 1 ? 
+
+yes
+| ?- member(X, [1,2,3,4]).member(X,[A,B,X|C]). caddr(X,[A,B,X|C]). 
+uncaught exception: error(existence_error(procedure,caddr/2),top_level/0)
+| ?- caddr(X,[A,B,X|C]).
+uncaught exception: error(existence_error(procedure,caddr/2),top_level/0)
+| ?- 
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologgedit lab4-sol.pro
+
+(gedit:1753464): Gtk-[1;33mWARNING[0m **: [34m14:18:21.774[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8Pprolog
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- member(X, [A,V,C   B,C X|C][A,B,X|C])(X, [A,B,X|C]).
+
+X = A ? 
+
+yes
+| ?- member(X, [A,B,X|C]).                     member(X, [A,B,X|C]).                     MEMBER      member(X, [1,2,3][1,2,3])(X, [1,2,3]).
+
+X = 1 ? 
+
+yes
+| ?- member(X, [1,2,3]).member(X, [A,B,X|C]).
+
+X = A ? C
+Action (; for next solution, a for all solutions, RET to stop) ? 
+
+yes
+| ?- 
+member(X, [A,B,X|C]).member(X, [1,2,3]).  
+
+X = 1 ? 
+
+yes
+| ?- member(X, [1,2,3]).
+
+X = 1 ? ;
+
+X = 2 ? 
+
+yes
+| ?- ;
+;member(X, [1,2,3]).
+uncaught exception: error(syntax_error('user_input:8 (char:1) . or operator expected after expression'),read_term/3)
+| ?- member(X, [1,2,3]).
+
+X = 1 ? ;
+
+X = 2 ? ;
+
+X = 3 ? ;
+
+no
+| ?- 
+Prolog interruption (h for help) ? x
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? 
+   a  abort        b  break
+   c  continue     e  exit
+   d  debug        t  trace
+  h/? help
+
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ xi[K[Kprolog[Kprologgedit lab4-sol.pro
+
+(gedit:1753975): Gtk-[1;33mWARNING[0m **: [34m14:20:36.060[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prolog
+GNU Prolog 1.3.0
+By Daniel Diaz
+Copyright (C) 1999-2007 Daniel Diaz
+| ?- B =   N = 1+  + 2
+.
+
+N = 1+2
+
+yes
+| ?- n   n i   N is 1 +2  2
+
+.
+
+N = 3
+
+yes
+| ?- N IS  is 1+2*3.
+
+N = 7
+
+yes
+| ?- 5 IS  is 7 mod 2.
+
+no
+| ?- X is 7 M mod 2.
+
+X = 1
+
+yes
+| ?- N = pi.
+
+N = pi
+
+yes
+| ?- N s is pi.
+uncaught exception: error(type_error(evaluable,pi/0),(is)/2)
+| ?- N is sqrt(4)(4).
+
+N = 2.0
+
+yes
+| ?- N os  is pi.
+uncaught exception: error(type_error(evaluable,pi/0),(is)/2)
+| ?- qroot(A,B,c c,z   C,Z)(A,B,C,Z):- D is B*B, E s is 4*a A*C, F F is 2*A, G is D-E, F is sqe rt(G)(G),Z is [A[79C   , ZX  i  Z is [A[79CF is sqrt(G),, ZZ is  [A[79CH is sqrt(G),, ZZ is [A[79C is sqrt(G),, , ZZ is  [A[79C ZZ is  [A[79CZ is  ( ) ()-() (B) +) H) )/ f   F .  
+uncaught exception: error(existence_error(procedure,(:-)/2),top_level/0)
+| ?- 
+Prolog interruption (h for help) ? e
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ 
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ prologgedit lab4-sol.pro
+
+(gedit:1757164): Gtk-[1;33mWARNING[0m **: [34m14:33:50.721[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ gedit lab4-sol.pro
+
+(gedit:1758723): Gtk-[1;33mWARNING[0m **: [34m14:40:25.167[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n11:/import/linux/home1/pparmar2/i471b/work/lab4$ exit
+
+Script done on 2021-03-25 14:43:26-04:00 [COMMAND_EXIT_CODE="0"]

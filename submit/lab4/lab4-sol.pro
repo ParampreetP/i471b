@@ -3,11 +3,11 @@ head(a, tail(z, B), Y) = head(_, tail(X, _), _).
 cons(a, cons(b, cons(c, z))) = cons(_, cons(_, cons(_, X))).
 
 
-
+% proper listers are [a, b], and [a|[b]]
 car(X, [X|R]).
 cddr(X,[A, X|B, X|C]).
-caddr(X,[A,B,X|C]). 
-cdar(X, [[X|A], A|B]).
+caddr(X,[A,B,X,C]). 
+cdar(X, [[A|X], B, C]).
 
 
 quadratic_roots(A, B, C, Z) :-

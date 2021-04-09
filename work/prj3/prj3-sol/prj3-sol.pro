@@ -13,6 +13,17 @@
 %?- sum_tree(tree(leaf(5), 3, tree(leaf(3), 2, leaf(4))), Sum).
 %Sum = 17.
 
+
+
+sum_tree(leaf(X), Sum):-
+  Sum = X.
+sum_tree(tree(X, Y, Z), Sum):-
+  sum_tree(X, Sum1),
+  sum_tree(Z, Sum2),
+  Sum is Y + Sum1 + Sum2.
+
+
+
 /** Exercise 2 Requirements: naive_flatten_tree(Tree, Flattened)
  *  should succeed if Tree is a tree and Flattened is a list
  *  containing all the values in Tree obtained using an in-order
@@ -28,6 +39,16 @@
 %?- naive_flatten_tree(tree(leaf(x), y, tree(leaf([a, b]), 2, leaf([c, z]))),
 %                      Flattened).
 %Flattened = [x, y, [a, b], 2, [c, z]].
+
+
+naive_flatten_tree(leaf(X), Flattened):-
+  Flattened = [X].
+naive_flatten_tree(tree(X, Y, Z), Flattened):-
+  naive_flatten_tree(X, Flattened1),
+  naive_flatten_tree(Z, Flattened2),
+  append(Flattened1 , [ Y | Flattened2], Flattened).
+
+
 
 /** Exercise 3 Requirements: flatten_tree/2 has the same requirements
  *  as naive_flatten_tree/2.  However, it may use auxiliary procedures

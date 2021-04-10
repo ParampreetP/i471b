@@ -63,6 +63,21 @@ naive_flatten_tree(tree(X, Y, Z), Flattened):-
 %                Flattened).
 %Flattened = [x, y, [a, b], 2, [c, z]].
 
+
+
+accumulator(leaf(X) , List, Flattened):-
+  Flattened = [ X | List ].
+accumulator(tree(X, Y, Z) , List, Flattened):-
+  accumulator(Z, List, TempList),
+  accumulator(X, [ Y | TempList], Flattened).
+
+flatten_tree(X, Flattened):-
+  accumulator(X, [], Flattened).
+
+
+
+
+
 % Exercise 4 Requirements: Write a Prolog procedure
 % parse_arith(Tokens, AST) which will parse list Tokens into an AST.
 % Specifically, the parser should parse the language defined by the
@@ -133,6 +148,13 @@ naive_flatten_tree(tree(X, Y, Z), Flattened):-
 % ?- parse_arith([ 3, ')' ], Ast), Val is Ast.
 % false.
 % ?- 
+
+
+
+
+
+
+
 
 % An NFA is represented as a Prolog structure nfa(S, Transitions, Finals)
 % where S is the current NFA state, Finals is a list of final states and

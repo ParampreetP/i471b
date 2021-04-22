@@ -150,7 +150,8 @@ flatten_tree(X, Flattened):-
 % ?- 
 
 
-
+parse_arith(Tokens, AST):-
+	AST is Tokens.
 
 
 
@@ -195,4 +196,7 @@ wiki_nfa(nfa(x, [ x - 0 - x, x - 1 - x, x - 1 - a,
 % no solution if there are not at least 3 symbols after first 1
 % ?- wiki_nfa(N), nfa_sim(N, [1, 1, 1], Ss).
 % false.
+
+nfa_sim(NFA, Inputs, States):-
+	N is NFA.
 

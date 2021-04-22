@@ -1,0 +1,293 @@
+Script started on 2021-04-22 13:15:18-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="80" LINES="24"]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ touch lab5-sol.hs
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugs
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sol.hs"
+Main> ^C{Interrupted!}
+Main> exit
+ERROR - Undefined variable "exit"
+Main> (exit)
+ERROR - Undefined variable "exit"
+Main> e
+ERROR - Undefined variable "e"
+Main> q
+ERROR - Undefined variable "q"
+Main> ^C
+ERROR - Unrecognised character `\3' in column 1
+Main> clear
+ERROR - Undefined variable "clear"
+Main> stopped
+ERROR - Undefined variable "stopped"
+Main> ;>
+ERROR - Syntax error in expression (unexpected `;', possibly due to bad layout)
+Main> ;?
+ERROR - Syntax error in expression (unexpected `;', possibly due to bad layout)
+Main> ;[K:?
+LIST OF COMMANDS:  Any command may be abbreviated to :c where
+c is the first character in the full name.
+
+:load <filenames>   load modules from specified files
+:load               clear all files except prelude
+:also <filenames>   read additional modules
+:reload             repeat last load command
+:edit <filename>    edit file
+:edit               edit last module
+:module <module>    set module for evaluating expressions
+<expr>              evaluate expression
+:type <expr>        print type of expression
+:?                  display this list of commands
+:set <options>      set command line options
+:set                help on command line options
+:names [pat]        list names currently in scope
+:info <names>       describe named objects
+:browse <modules>   browse names exported by <modules>
+:main <aruments>    run the main function with the given arguments
+:find <name>        edit module containing definition of name
+:cd dir             change directory
+:gc                 force garbage collection
+:version            print Hugs version
+:quit               exit Hugs interpreter
+Main> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ clear
+[H[2J[3Jpparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit *[KLab5.LOG [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K lab5-sol.hs 
+
+(gedit:1740530): Gtk-[1;33mWARNING[0m **: [34m13:18:46.105[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pclear
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Phugs
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :e[Kr
+Hugs> :l "lab5-sol.hs"
+Main> :t add
+add :: Num a => a -> a -> a
+Main> :t plus
+plus :: Integer -> Integer -> Integer
+Main> :type conc
+conc :: [a] -> [a] -> [a]
+Main> expr:[K :: type
+ERROR - Syntax error in type expression (unexpected keyword "type")
+Main> add 1 [K[K2 3
+5
+Main> conc [1] [2, 3]
+[1,2,3]
+Main> conc [[1]] [[2, 3]]
+[[1],[2,3]]
+Main> conc "hello" "world"
+"helloworld"
+Main> conc ["hello"] ["world"]
+["hello","world"]
+Main> conc (conc ["hello"] ["world"]) ["goodbye"]
+["hello","world","goodbye"]
+Main> conc (conc ["hello"] ["world"]) [42]
+ERROR - Cannot infer instance
+*** Instance   : Num [Char]
+*** Expression : conc (conc ["hello"] ["world"]) [42]
+
+Main> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugsgedit lab5-sol.hs 
+
+(gedit:1741371): Gtk-[1;33mWARNING[0m **: [34m13:22:07.913[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chugs[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sol.hs" 
+Main> :t add10
+add10 :: Integer -> Integer
+Main> t[K:t plus5
+plus5 :: Integer -> Integer
+Main> :conc[K[K[K[Kt concHEllo[K[K[K[Kello
+concHello :: [Char] -> [Char]
+Main> conchello[K[K[K[K[KHEllo[K[K[K[Kello
+ERROR - Cannot find "show" function for:
+*** Expression : concHello
+*** Of type    : [Char] -> [Char]
+
+Main> plus5
+ERROR - Cannot find "show" function for:
+*** Expression : plus5
+*** Of type    : Integer -> Integer
+
+Main> plus [K5 5
+10
+Main> concHEl[K[Kello hello
+ERROR - Undefined variable "hello"
+Main> concHello hello[K[K[K[K[K"hello"
+"hellohello"
+Main> add10 10
+20
+Main> let tuple = ("hello", 42) in fst tuple
+"hello"
+Main> let tuple = ("hello", 42) in snd tuple
+42
+Main> [KMain> [KMain> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugsgedit lab5-sol.hs 
+
+(gedit:1742318): Gtk-[1;33mWARNING[0m **: [34m13:26:18.818[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs hugs[K
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sol.hs" 
+Main> first ("HEllo", 42)
+"HEllo"
+Main> first ("HEllo", 42)[1P[1P[1P[1P[1@s[1@e[1@c[1@o[1@n[1@d[1P[1@d[1P
+42
+Main> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugsgedit lab5-sol.hs 
+
+(gedit:1743086): Gtk-[1;33mWARNING[0m **: [34m13:29:04.446[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs hugs[K
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sol.hs" 
+Main> fst3 ("HEllo", 54 [K, 54[K[K55)
+"HEllo"
+Main> fst3 ("HEllo", 54, 55)[C[C[C[C[C[C[Kfst3 ("HEllo", 54, 55)[1P[1P[1P[1@s[1@n[1@d
+54
+Main> snd3 ("HEllo", 54, 55)[C[C[C[C[C[Cfst[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csnd[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K:quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugsgedit lab5-sol.hs 
+
+(gedit:1743810): Gtk-[1;33mWARNING[0m **: [34m13:32:19.708[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs hugs[K
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sol.hs"  
+Main> sumFitst[K[K[Krst2 "1 2" :1 2[K[K[K[K"1 2"
+ERROR - Type error in application
+*** Expression     : sumFirst2 "1 2" "1 2"
+*** Term           : "1 2"
+*** Type           : String
+*** Does not match : [[Char] -> a]
+
+Main> sumFirst2 "1 2" "1 2"[K[K[K[K[K[K[K[K[K[K[K[1 2] [1 3]
+ERROR - Cannot infer instance
+*** Instance   : Num (a -> [b] -> c)
+*** Expression : sumFirst2 [fromInt 1 2] [fromInt 1 3]
+
+Main> sumFirst2 [1 2] [1 3][K[K[K[K[K[K[K[K[K[K[2[K[K2, 4] [2, 4]
+ERROR - Cannot infer instance
+*** Instance   : Num ([a] -> b)
+*** Expression : sumFirst2 [2,4] [2,4]
+
+Main> sumFirst2 [2, 4] [2, 4][K[K[K[K[K[K[K
+6
+Main> sumFirst2 [2, 4][K[K[K[K[K1, 2]
+3
+Main> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugsgedit lab5-sol.hs 
+
+(gedit:1745100): Gtk-[1;33mWARNING[0m **: [34m13:37:15.873[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs hugs[K
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> :l "lab5-sol.hs" 
+Main> cartesianProduct [1..4] [2..4]
+[(1,2),(1,3),(1,4),(2,2),(2,3),(2,4),(3,2),(3,3),(3,4),(4,2),(4,3),(4,4)]
+Main> cartesianProduct [1..4] [2..4][C[C[C[C[C[C[13P:l "lab5-sol.hs" [C[C[C[C[C[CcartesianProduct [1..4] [2..4][C[C[C[C[C[C[13P:l "lab5-sol.hs" [C[C[C[C[C[CcartesianProduct [1..4] [2..4][C[C[C[C[C[C[KcartesianProductIf [1..4] [2..4] (>)
+[(3,2),(4,2),(4,3)]
+Main> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ hugsgedit lab5-sol.hs 
+
+(gedit:1747673): Gtk-[1;33mWARNING[0m **: [34m13:47:55.050[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs hugs[K
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2005
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Bugs: http://hackage.haskell.org/trac/hugs
+||   || Version: September 2006 _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Hugs> oddEvenPairs 5
+ERROR - Undefined variable "oddEvenPairs"
+Hugs> :l "lab5-sol.hs"
+Main> :l "lab5-sol.hs"[C[C[C[C[C[C[2PoddEvenPairs 5
+[(1,2),(1,4),(3,2),(3,4),(5,2),(5,4)]
+Main> oddEvenPairs 5[K7
+[(1,2),(1,4),(1,6),(3,2),(3,4),(3,6),(5,2),(5,4),(5,6),(7,2),(7,4),(7,6)]
+Main> :quit
+[Leaving Hugs]
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ clle[K[Ke[K[Kear[K[K[Klear
+[H[2J[3Jpparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ clear[1Phugsgedit lab5-sol.hs 
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ gedit lab5-sol.hs 
+
+(gedit:1749831): Gtk-[1;33mWARNING[0m **: [34m13:56:37.388[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ ^C
+pparmar2@remote-n13:/import/linux/home1/pparmar2/i471b/work/lab5$ exit
+
+Script done on 2021-04-22 13:56:49-04:00 [COMMAND_EXIT_CODE="130"]

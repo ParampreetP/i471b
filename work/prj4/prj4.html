@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../assets/styles/article.css" rel="stylesheet" type="text/css" /> 
+    <title>CS 471: Project 4</title>
+    
+  </head>
+  <body>
+    <nav>
+      <ul>
+	<li><a href="../../index.html" class="material-icons">house</a></li>
+	<li><a href="../../docs/index.html">Docs</a></li>
+	<li><a href="../../exercises/index.html">Exercises</a></li>
+	<li><a href="../../hws/index.html">Homeworks</a></li>
+	<li><a href="../../labs/index.html">Labs</a></li>
+	<li><a href="../../misc/index.html">Misc</a></li>
+	<li><a href="../../projects/index.html">Projects</a></li>
+	<li><a href="../../slides/index.html">Slides</a></li>
+	<li><a id="loginAction"></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section data-coord="prj4.umt:1:0"><h1 data-coord="prj4.umt:1:0">Project 4</h1><p data-coord="prj4.umt:3:0"><strong data-coord="prj4.umt:3:0">Due Date</strong>: 5/3 before midnight.
+</p><p data-coord="prj4.umt:5:0"><strong data-coord="prj4.umt:5:0">Important Reminder</strong>: As per the course
+<em data-coord="prj4.umt:5:110"><a href="../../misc/academic-honesty-statement/academic-honesty-policy.html" data-coord="prj4.umt:5:110">Academic Honesty Statement</a></em>, cheating of any kind will minimally
+result in your letter grade for the entire course being reduced by one
+level.
+</p><section data-coord="prj4.umt:11:0"><h2 data-coord="prj4.umt:11:0">Aims of This Project</h2><p data-coord="prj4.umt:14:0">The aims of this project are as follows:
+</p><ul data-coord="prj4.umt:16:0"><li data-coord="prj4.umt:16:0"><p data-coord="prj4.umt:16:4">To give you an introduction to programming in Haskell.
+</p></li><li data-coord="prj4.umt:18:0"><p data-coord="prj4.umt:18:4">To expose you programming with high-order functions.
+</p></li><li data-coord="prj4.umt:20:0"><p data-coord="prj4.umt:20:4">To get you to use lazy evaluation and infinite data structures.
+</p></li></ul></section><section data-coord="prj4.umt:23:0"><h2 data-coord="prj4.umt:23:0">Project Specification</h2><p data-coord="prj4.umt:26:0">Update your github repository with a directory
+submit/prj4-sol to contain a file <samp data-coord="prj4.umt:26:81">prj4-sol.hs</samp> which implement
+the functions specified in the skeleton file <a href="prj4-sol/prj4-sol.hs" data-coord="prj4.umt:26:180">prj4-sol.hs:</a>
+</p><ul data-coord="prj4.umt:31:0"><li data-coord="prj4.umt:31:0"><p data-coord="prj4.umt:31:4">The file may not include any other top-level definitions.  
+</p></li><li data-coord="prj4.umt:33:0"><p data-coord="prj4.umt:33:4">If the specification says that recursion is not allowed,
+then your implementation must not directly use recursion.
+</p></li></ul><p data-coord="prj4.umt:36:0">The file <a href="extras/LOG" data-coord="prj4.umt:36:23">LOG</a> provides an annotated sample log of the
+operation of these functions.
+</p></section><section data-coord="prj4.umt:39:0"><h2 data-coord="prj4.umt:39:0">Provided Files</h2><p data-coord="prj4.umt:42:0">The &lt;./prj4-sol&gt; directory contains the following:
+</p><dl data-coord="prj4.umt:45:0"><dt data-coord="prj4.umt:45:2"> <a href="./prj4-sol/prj4-sol.hs" data-coord="prj4.umt:45:27">prj4-sol.hs</a> </dt><dd data-coord="prj4.umt:46:0"><p data-coord="prj4.umt:46:4">A file containing the specifications for the exercises.  You should
+use this as a starting point for your work.
+</p></dd><dt data-coord="prj4.umt:49:2"> <a href="./prj4-sol/README" data-coord="prj4.umt:49:22">README</a> </dt><dd data-coord="prj4.umt:50:0"><p data-coord="prj4.umt:50:4">A template README; replace the <samp data-coord="prj4.umt:50:35">XXX</samp> with your name, B-number and
+email.  You may add any other information you believe is relevant
+to your project submission.  In particular, you should document
+the data-structure used for your word-store.
+</p></dd></dl></section><section data-coord="prj4.umt:56:0"><h2 data-coord="prj4.umt:56:0">Hints</h2><ul data-coord="prj4.umt:59:0"><li data-coord="prj4.umt:59:0"><p data-coord="prj4.umt:59:4">The solutions to many of the exercises easily fit on a single line.
+</p></li><li data-coord="prj4.umt:61:0"><p data-coord="prj4.umt:61:4">Most of the exercises require the use of higher-order functions.
+</p></li><li data-coord="prj4.umt:63:0"><p data-coord="prj4.umt:63:4">Some of the exercises can avoid the use of recursion by using
+functions like <samp data-coord="prj4.umt:63:85">map</samp>, <samp data-coord="prj4.umt:63:92">foldl</samp>, <samp data-coord="prj4.umt:63:101">foldr</samp>, or <samp data-coord="prj4.umt:63:113">filter</samp>.
+</p></li><li data-coord="prj4.umt:66:0"><p data-coord="prj4.umt:66:4">Even though the requirements preclude the use of auxiliary top-level
+definitions, this is not really a restriction since functions can
+contain internal definitions using <samp data-coord="prj4.umt:66:182">let</samp> or <samp data-coord="prj4.umt:66:191">where</samp>.
+</p></li><li data-coord="prj4.umt:70:0"><p data-coord="prj4.umt:70:4">See <a href="https://wiki.haskell.org/Debugging" data-coord="prj4.umt:70:46">Debugging</a> and
+<a href="https://en.wikibooks.org/wiki/Haskell/Debugging" data-coord="prj4.umt:70:119">Haskell/Debugging</a> for tips on how to debug Haskell programs.
+</p></li></ul></section></section>
+    </div> <!-- #content -->
+    <script src="../../assets/scripts/loginAction.js"></script>
+  </body>
+</html>

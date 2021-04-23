@@ -1,0 +1,58 @@
+Main> quadraticRoots 2 5 2
+(-0.5,-2.0)
+Main> quadraticRoots 5 6 1
+(-0.2,-1.0)
+
+Main> take 10 $ iterateFunction (\x->x+1) 0
+[0,1,2,3,4,5,6,7,8,9]
+Main> take 5 $ iterateFunction (\x->x*x) 2
+[2,4,16,256,65536]
+
+Main> take 10 $ multiples 3
+[0,3,6,9,12,15,18,21,24,27]
+Main> take 10 $ multiples (-3)
+[0,-3,-6,-9,-12,-15,-18,-21,-24,-27]
+
+Main> take 15 $ hailstones 3
+[3,10,5,16,8,4,2,1,4,2,1,4,2,1,4]
+Main> take 15 $ hailstones 7
+[7,22,11,34,17,52,26,13,40,20,10,5,16,8,4]
+
+Main> hailstonesLen 3
+8
+Main> hailstonesLen 7
+17
+Main> hailstonesLen 77031
+351
+
+Main> occurrences "twas brillig and the slithy toves" 't'
+[0,17,24,28]
+Main> occurrences "twas brillig and the slithy toves" 'x'
+[]
+
+Main> foldTree (\t1 t t2->t1 + 3*t + t2) (\x->x*2) (Leaf 5)
+10
+Main> foldTree (\t1 t t2->t1 + 3*t + t2) (\x->x*2) (Tree (Leaf 3) 2 (Leaf 4))
+20
+-- Typed on single line
+Main> foldTree (\t1 t t2->t1 + 3*t + t2) (\x->x*2) 
+          (Tree (Leaf 5) 3 (Tree (Leaf 3) 2 (Leaf 4)))
+39
+
+Main> flattenTree (Leaf 5)
+[5]
+Main> flattenTree  (Tree (Leaf 5) 3 (Tree (Leaf 3) 2 (Leaf 4)))
+[5,3,3,2,4]
+-- Typed on single line
+Main> flattenTree  (Tree (Leaf [5]) [3] 
+                          (Tree (Leaf [3, 2]) [1, 2] (Leaf [4, 5])))
+[[5],[3],[3,2],[1,2],[4,5]]
+
+-- Typed on single line
+Main> catenateTreeLists  (Tree (Leaf [5]) [3] 
+                                (Tree (Leaf [3, 2]) [1, 2] (Leaf [4, 5])))
+[5,3,3,2,1,2,4,5]
+-- Typed on single line
+Main> catenateTreeLists  (Tree (Leaf "twas ") "brillig " 
+                          (Tree (Leaf "and ") "the slithy " (Leaf "toves")))
+"twas brillig and the slithy toves"

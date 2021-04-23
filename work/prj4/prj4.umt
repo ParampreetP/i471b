@@ -1,0 +1,73 @@
+                      P r o j e c t   4 
+
+*Due Date*: 5/3 before midnight.
+
+*Important Reminder*: As per the course
+.<../../misc/academic-honesty-statement/academic-honesty-policy.html>
+"Academic Honesty Statement", cheating of any kind will minimally
+result in your letter grade for the entire course being reduced by one
+level.
+
+			    Aims of This Project
+			    ====================
+
+The aims of this project are as follows:
+
+  + To give you an introduction to programming in Haskell.
+
+  + To expose you programming with high-order functions.
+
+  + To get you to use lazy evaluation and infinite data structures.
+
+
+			  Project Specification
+			  =====================
+
+Update your github repository with a directory
+submit/prj4-sol to contain a file `prj4-sol.hs` which implement
+the functions specified in the skeleton file .<prj4-sol/prj4-sol.hs>
+prj4-sol.hs:
+
+  + The file may not include any other top-level definitions.  
+
+  + If the specification says that recursion is not allowed,
+    then your implementation must not directly use recursion.
+
+The file .<extras/LOG> LOG provides an annotated sample log of the
+operation of these functions.
+
+			  Provided Files
+			  ==============
+
+The <./prj4-sol> directory contains the following:
+
+
+  : .<./prj4-sol/prj4-sol.hs> prj4-sol.hs : 
+    A file containing the specifications for the exercises.  You should
+    use this as a starting point for your work.
+      
+  : .<./prj4-sol/README> README :
+    A template README; replace the `XXX` with your name, B-number and
+    email.  You may add any other information you believe is relevant
+    to your project submission.  In particular, you should document
+    the data-structure used for your word-store.
+
+
+			Hints
+			=====
+
+  + The solutions to many of the exercises easily fit on a single line.
+
+  + Most of the exercises require the use of higher-order functions.
+
+  + Some of the exercises can avoid the use of recursion by using
+    functions like `map`, `foldl`, `foldr`, or `filter`.
+
+  + Even though the requirements preclude the use of auxiliary top-level
+    definitions, this is not really a restriction since functions can
+    contain internal definitions using `let` or `where`.
+
+  + See .<https://wiki.haskell.org/Debugging> Debugging and
+    .<https://en.wikibooks.org/wiki/Haskell/Debugging>
+    Haskell/Debugging for tips on how to debug Haskell programs.
+

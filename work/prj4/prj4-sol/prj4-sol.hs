@@ -16,15 +16,14 @@ quadraticRoots a b c =
 -- Return infinite list containing [z, f(z), f(f(z)), f(f(f(z))), ...]
 -- May use recursion.
 iterateFunction :: (a -> a) -> a -> [a]
-iterateFunction f z =
-  undefined
+iterateFunction f z = z : iterateFunction f (f z)
+
 
 -- Problem 3
 -- Using iterateFunction return infinite list containing 
 -- multiples of n by all the non-negative integers.
 -- May NOT use recursion.
-multiples n =
-  undefined
+multiples n = [ y * n| y <- iterateFunction (\x->x+1) 0]
 
 -- Problem 4
 -- Use iterateFunction to return an infinite list containing list 

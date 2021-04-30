@@ -44,13 +44,15 @@ hailstones n =
 -- May NOT use recursion.  Can use elemIndex from Data.List
 hailstonesLen :: Integral a => a -> Int
 hailstonesLen n =
-  undefined
+  case elemIndex 1 (hailstones n) of
+    (Just n) -> n + 1
+    Nothing -> -1
 
 -- Problem 6
 -- Given a string s and char c, return list of indexes in s where c
 -- occurs
 occurrences s c =
-  undefined
+  map snd $ filter (\p->fst p == c) (s `zip` [0..(length s)])
 
 -- A tree of some type t is either a Leaf containing a value of type t,
 -- or it is an internal node (with constructor Tree) with some left

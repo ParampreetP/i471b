@@ -35,7 +35,8 @@ multiples n = [ y * n| y <- iterateFunction (\x->x+1) 0]
 -- See <https://en.wikipedia.org/wiki/Collatz_conjecture>
 hailstones :: Integral a => a -> [a]
 hailstones n =
-  undefined
+  let f =  \i -> if i `mod` 2 == 0 then (i `div` 2) else 3 * i + 1
+  in iterateFunction f n
 
 -- Problem 5
 -- Return length of hailstone sequence starting with n terminating

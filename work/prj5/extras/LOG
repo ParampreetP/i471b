@@ -1,0 +1,73 @@
+% compile auxiliary functions
+1> c(fns).
+{ok,fns}
+
+% compile fn_server module
+2> c(fn_server).
+fn_server.erl:5: Warning: export_all flag enabled - all functions will be exported
+{ok,fn_server}
+
+% set QFn to quadratic_roots function from fns
+3> QFn = fun fns:quadratic_roots/3.
+fun fns:quadratic_roots/3
+
+% set IFn to trapezoidal integration function from fns
+4> IFn = fun fns:integral/4.
+fun fns:integral/4
+
+% start fn_server for quadratic_roots, records its PID in QPid
+5> QPid = fn_server:start(QFn).
+<0.91.0>
+
+
+% start fn_server for numerical integration, records its PID in IPid
+6> IPid = fn_server:start(IFn).
+<0.93.0>
+
+% use quad-roots server to compute roots for 5*x^2 + 6*x + 1 = 0.
+7> fn_server:compute(QPid, [5, 6, 1]).
+[-0.2,-1.0]
+
+% use quad-roots server to compute roots for 5*x^2 + 2*x + 1 = 0.
+% error since complex roots not handled.
+8> fn_server:compute(QPid, [5, 2, 1]).
+error
+
+% use integration server to compute definite integral of
+% f(x) = x over [0, 1] using 5 steps.
+9> fn_server:compute(IPid, [fun (X) -> X end, 0, 1, 5]).
+0.5
+
+% use integration server to compute definite integral of
+% f(x) = x^2 over [0, 1] using 50 steps.
+10> fn_server:compute(IPid, [fun (X) -> X*X end, 0, 1, 50]).
+0.3334000000000003
+
+% stop quad-roots server
+11> fn_server:stop(QPid).
+stop
+
+% stop integration server
+12> fn_server:stop(IPid).
+stop
+
+% compile random number generation module
+13> c(rand).
+rand.erl:5: Warning: export_all flag enabled - all functions will be exported
+{ok,rand}
+
+% start random number generator server with seed 73 and record its PID in RPid
+14> RPid = rand:start(73).
+<0.106.0>
+
+% use random number generator server to compute random numbers
+15> rand:rand(RPid).
+1026045948
+16> rand:rand(RPid).
+1875666059
+17> rand:rand(RPid).
+1926655142
+
+% stop random number generator server
+18> rand:stop(RPid).
+stop

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../assets/styles/article.css" rel="stylesheet" type="text/css" /> 
+    <title>CS 471: Project 5</title>
+    
+  </head>
+  <body>
+    <nav>
+      <ul>
+	<li><a href="../../index.html" class="material-icons">house</a></li>
+	<li><a href="../../docs/index.html">Docs</a></li>
+	<li><a href="../../exercises/index.html">Exercises</a></li>
+	<li><a href="../../hws/index.html">Homeworks</a></li>
+	<li><a href="../../labs/index.html">Labs</a></li>
+	<li><a href="../../misc/index.html">Misc</a></li>
+	<li><a href="../../projects/index.html">Projects</a></li>
+	<li><a href="../../slides/index.html">Slides</a></li>
+	<li><a id="loginAction"></a></li>
+      </ul>
+    </nav>
+    <div class="content">
+      <section data-coord="prj5.umt:1:0"><h1 data-coord="prj5.umt:1:0">Project 5</h1><p data-coord="prj5.umt:3:0"><strong data-coord="prj5.umt:3:0">Due Date</strong>: 5/17 before midnight.  <strong data-coord="prj5.umt:3:35">No late submissions</strong>
+</p><p data-coord="prj5.umt:5:0"><strong data-coord="prj5.umt:5:0">Important Reminder</strong>: As per the course
+<em data-coord="prj5.umt:5:110"><a href="../../misc/academic-honesty-statement/academic-honesty-policy.html" data-coord="prj5.umt:5:110">Academic Honesty Statement</a></em>, cheating of any kind will minimally
+result in your letter grade for the entire course being reduced by one
+level.
+</p><section data-coord="prj5.umt:11:0"><h2 data-coord="prj5.umt:11:0">Aims of This Project</h2><p data-coord="prj5.umt:14:0">The aims of this project are as follows:
+</p><ul data-coord="prj5.umt:16:0"><li data-coord="prj5.umt:16:0"><p data-coord="prj5.umt:16:4">To give you an introduction to programming in Erlang.
+</p></li><li data-coord="prj5.umt:18:0"><p data-coord="prj5.umt:18:4">To expose you to concurrent programming.
+</p></li></ul></section><section data-coord="prj5.umt:21:0"><h2 data-coord="prj5.umt:21:0">Project Specification</h2><p data-coord="prj5.umt:24:0">Update your github repository with a directory submit/prj5-sol to
+contain the following files:
+</p><dl data-coord="prj5.umt:27:0"><dt data-coord="prj5.umt:27:2"> <samp data-coord="prj5.umt:27:1">fn_server.erl</samp> </dt><dd data-coord="prj5.umt:28:0"><p data-coord="prj5.umt:28:4">This file should implement code for a <samp data-coord="prj5.umt:28:42">fn_server</samp> Erlang module
+which supports evaluating a fixed function with arbitrary
+arguments.  Specifically, it should export the following functions:
+</p><dl data-coord="prj5.umt:32:0"><dt data-coord="prj5.umt:32:6"> <samp data-coord="prj5.umt:32:1">fn_server:start(Fn)</samp> </dt><dd data-coord="prj5.umt:33:0"><p data-coord="prj5.umt:33:9">Start an Erlang server to compute function <samp data-coord="prj5.umt:33:52">Fn</samp> and return
+its PID. The server should maintain <samp data-coord="prj5.umt:33:106">Fn</samp> as part of its
+state.
+</p></dd><dt data-coord="prj5.umt:37:6"> <samp data-coord="prj5.umt:37:1">fn_server:compute(ServerPid, Args)</samp> </dt><dd data-coord="prj5.umt:38:0"><p data-coord="prj5.umt:38:9">Use the server identified by PID <samp data-coord="prj5.umt:38:42">ServerPid</samp> to compute
+and return the value of applying the associated function <samp data-coord="prj5.umt:38:124">Fn</samp> to
+the arguments specified by the list <samp data-coord="prj5.umt:38:170">Args</samp>.
+</p></dd><dt data-coord="prj5.umt:42:6"> <samp data-coord="prj5.umt:42:1">fn_server:stop(ServerPid)</samp> </dt><dd data-coord="prj5.umt:43:0"><p data-coord="prj5.umt:43:8">Stop the server identified by PID <samp data-coord="prj5.umt:43:42">ServerPid</samp>.
+</p></dd></dl></dd><dt data-coord="prj5.umt:45:2"> <samp data-coord="prj5.umt:45:1">rand.erl</samp> </dt><dd data-coord="prj5.umt:46:0"><p data-coord="prj5.umt:46:4">This file should implement code for a <samp data-coord="prj5.umt:46:42">rand</samp> Erlang module
+which supports the generation of random integers.  Specifically,
+it should export the following functions:
+</p><dl data-coord="prj5.umt:50:0"><dt data-coord="prj5.umt:50:6"> <samp data-coord="prj5.umt:50:1">rand:start(Seed)</samp> </dt><dd data-coord="prj5.umt:51:0"><p data-coord="prj5.umt:51:9">Start an Erlang server to generate random integers and return
+its PID. The server should maintain the current <samp data-coord="prj5.umt:51:121">Seed</samp> as part of its
+state.
+</p></dd><dt data-coord="prj5.umt:55:6"> <samp data-coord="prj5.umt:55:1">rand:rand(ServerPid)</samp> </dt><dd data-coord="prj5.umt:56:0"><p data-coord="prj5.umt:56:9">Use the server identified by PID <samp data-coord="prj5.umt:56:42">ServerPid</samp> to generate and
+return the next random number using the provided
+<samp data-coord="prj5.umt:56:123">next_rand()</samp> function.  The <samp data-coord="prj5.umt:56:152">Seed</samp> stored in the server
+should be set to the returned value.
+</p></dd><dt data-coord="prj5.umt:61:6"> <samp data-coord="prj5.umt:61:1">rand:stop(ServerPid)</samp> </dt><dd data-coord="prj5.umt:62:0"><p data-coord="prj5.umt:62:8">Stop the server identified by PID <samp data-coord="prj5.umt:62:42">ServerPid</samp>.
+</p></dd></dl></dd></dl><p data-coord="prj5.umt:64:0">The file <a href="extras/LOG" data-coord="prj5.umt:64:23">LOG</a> provides an annotated sample log of the
+operation of these functions.
+</p></section><section data-coord="prj5.umt:67:0"><h2 data-coord="prj5.umt:67:0">Provided Files</h2><p data-coord="prj5.umt:70:0">The <a href="./prj5-sol" data-coord="prj5.umt:70:18">prj5-sol</a> directory contains the following:
+</p><dl data-coord="prj5.umt:73:0"><dt data-coord="prj5.umt:73:2"> <a href="./prj5-sol/fn_server.erl" data-coord="prj5.umt:73:29">fn_server.erl</a> </dt><dd data-coord="prj5.umt:74:0"><p data-coord="prj5.umt:74:4">A starting point for the <samp data-coord="prj5.umt:74:29">fn-server.erl</samp> you are required to complete.
+</p></dd><dt data-coord="prj5.umt:76:2"> <a href="./prj5-sol/rand.erl" data-coord="prj5.umt:76:24">rand.erl</a> </dt><dd data-coord="prj5.umt:77:0"><p data-coord="prj5.umt:77:4">A starting point for the <samp data-coord="prj5.umt:77:29">rand.erl</samp> you are required to complete.
+This file provides the <samp data-coord="prj5.umt:77:97">next_rand()</samp> function which can be used
+to generate the next random number.
+</p></dd><dt data-coord="prj5.umt:81:2"> <a href="./prj5-sol/fns.erl" data-coord="prj5.umt:81:23">fns.erl</a> </dt><dd data-coord="prj5.umt:82:0"><p data-coord="prj5.umt:82:4">Functions which can be used for testing the function server.
+</p></dd><dt data-coord="prj5.umt:84:2"> <a href="./prj5-sol/README" data-coord="prj5.umt:84:22">README</a> </dt><dd data-coord="prj5.umt:85:0"><p data-coord="prj5.umt:85:4">A template README; replace the <samp data-coord="prj5.umt:85:35">XXX</samp> with your name, B-number and
+email.  You may add any other information you believe is relevant
+to your project submission.  In particular, you should document
+the data-structure used for your word-store.
+</p></dd></dl></section><section data-coord="prj5.umt:91:0"><h2 data-coord="prj5.umt:91:0">Hints</h2><ul data-coord="prj5.umt:94:0"><li data-coord="prj5.umt:94:0"><p data-coord="prj5.umt:94:4">The amount of code you need to write for this project is well
+under 50 lines.
+</p></li><li data-coord="prj5.umt:97:0"><p data-coord="prj5.umt:97:4">The function server is very similar to the data server
+covered in the lab.
+</p></li><li data-coord="prj5.umt:100:0"><p data-coord="prj5.umt:100:4">To apply a function <samp data-coord="prj5.umt:100:24">Fn</samp> to some list of arguments <samp data-coord="prj5.umt:100:55">Args</samp>,
+use Erlang's <samp data-coord="prj5.umt:100:80">apply(Fn, Args)</samp>.
+</p></li><li data-coord="prj5.umt:103:0"><p data-coord="prj5.umt:103:4">The random number generation server needs to maintain
+the <strong data-coord="prj5.umt:103:66">current</strong> seed as part of its state.  This can easily
+be achieved by having the current seed as an argument
+to the server function.
+</p></li><li data-coord="prj5.umt:108:0"><p data-coord="prj5.umt:108:4">Use <samp data-coord="prj5.umt:108:8">io:format()</samp> when debugging.
+</p></li></ul></section></section>
+    </div> <!-- #content -->
+    <script src="../../assets/scripts/loginAction.js"></script>
+  </body>
+</html>
